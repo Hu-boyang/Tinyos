@@ -1,0 +1,32 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0", 
+    "tasks": [
+        {
+            "label": "image write",
+            "type": "shell",
+            "command": "python ${workspaceRoot}/script/img-write.py",
+            "options": {
+                "cwd": "${workspaceRoot}/../image/"
+            }
+        },
+        {
+            "label": "start qemu",
+            "type": "shell",
+            "command": "python ${workspaceRoot}/script/qemu-debug.py",
+            "options": {
+                "cwd": "${workspaceRoot}/../image/"
+            }
+        },
+        {
+            "label": "调试准备",
+            "dependsOrder": "sequence",
+            "dependsOn": [
+                "image write",
+                "start qemu"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

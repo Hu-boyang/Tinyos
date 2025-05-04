@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CppProject/TinyOs/src/source/boot/boot.h
+
+E:/CppProject/TinyOs/src/source/boot/start.S
+boot.h
+E:/CppProject/TinyOs/src/source/boot/boot.h
+

@@ -1,0 +1,17 @@
+E:/CppProject/TinyOs/src/build/CMakeFiles/edit_cache.dir
+E:/CppProject/TinyOs/src/build/CMakeFiles/rebuild_cache.dir
+E:/CppProject/TinyOs/src/build/source/boot/CMakeFiles/boot.dir
+E:/CppProject/TinyOs/src/build/source/boot/CMakeFiles/edit_cache.dir
+E:/CppProject/TinyOs/src/build/source/boot/CMakeFiles/rebuild_cache.dir
+E:/CppProject/TinyOs/src/build/source/loader/CMakeFiles/loader.dir
+E:/CppProject/TinyOs/src/build/source/loader/CMakeFiles/edit_cache.dir
+E:/CppProject/TinyOs/src/build/source/loader/CMakeFiles/rebuild_cache.dir
+E:/CppProject/TinyOs/src/build/source/kernel/CMakeFiles/kernel.dir
+E:/CppProject/TinyOs/src/build/source/kernel/CMakeFiles/edit_cache.dir
+E:/CppProject/TinyOs/src/build/source/kernel/CMakeFiles/rebuild_cache.dir
+E:/CppProject/TinyOs/src/build/source/applib/CMakeFiles/app.dir
+E:/CppProject/TinyOs/src/build/source/applib/CMakeFiles/edit_cache.dir
+E:/CppProject/TinyOs/src/build/source/applib/CMakeFiles/rebuild_cache.dir
+E:/CppProject/TinyOs/src/build/source/shell/CMakeFiles/shell.dir
+E:/CppProject/TinyOs/src/build/source/shell/CMakeFiles/edit_cache.dir
+E:/CppProject/TinyOs/src/build/source/shell/CMakeFiles/rebuild_cache.dir
