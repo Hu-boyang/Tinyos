@@ -37,6 +37,9 @@
 
 /// @brief FAT表中表示空闲簇的值
 #define FAT_CLUSTER_FREE       0
+
+/// @brief 文件名长度
+#define SFN_LEN 11
  
 /**
  * @brief diritem结构体描述

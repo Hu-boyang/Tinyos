@@ -739,28 +739,35 @@ int fatfs_closedir(struct _fs_t *fs,DIR *dir){
  * @param path 要删除的文件或目录的路径
  */
 int fatfs_unlink(struct _fs_t *fs,const char *path){
-    fat_t *fat=(fat_t*)fs->data;
+ fat_t * fat = (fat_t *)fs->data;
 
-    for(int i=0;i<fat->root_ent_cnt;i++){
-        diritem_t *item=read_dir_entry(fat,i);
-        if(item == (diritem_t*)0){
+    // 遍历根目录的数据区，找到已经存在的匹配项
+    for (int i = 0; i < fat->root_ent_cnt; i++) {
+        diritem_t * item = read_dir_entry(fat, i);
+        if (item == (diritem_t *)0) {
             return -1;
         }
 
-        if(item->DIR_Name[0] == DIRITEM_NAME_END){
+         // 结束项，不需要再扫描了，同时index也不能往前走
+        if (item->DIR_Name[0] == DIRITEM_NAME_END) {
             break;
         }
 
-        if(item->DIR_Name[0] == DIRITEM_NAME_FREE){
+        // 只显示普通文件和目录，其它的不显示
+        if (item->DIR_Name[0] == DIRITEM_NAME_FREE) {
             continue;
         }
 
-        if(diritem_name_match(item,path)){
-            int cluster=(item ->DIR_FstClusHI << 16) | item->DIR_FstClusLO;
-            cluster_free_chain(fat,cluster);
+        // 找到要打开的目录
+        if (diritem_name_match(item, path)) {
+            // 释放簇
+            int cluster = (item->DIR_FstClusHI << 16) | item->DIR_FstClusLO;
+            cluster_free_chain(fat, cluster);
 
-            kernel_memset(item,0,sizeof(diritem_t));
-            return write_dir_entry(fat,item,i);
+            // 写diritem项
+            diritem_t item;
+            kernel_memset(&item, 0, sizeof(diritem_t));
+            return write_dir_entry(fat, &item, i);
         }
     }
 
