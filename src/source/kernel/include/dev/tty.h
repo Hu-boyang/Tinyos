@@ -16,6 +16,9 @@
 /// @brief 终端设备的个数
 #define TTY_NR  8
 
+/// @brief 回显命令是否开启
+#define TTY_CMD_ECHO  0x1
+
 /**
  * @brief tty设备的FIFO队列结构体
  * @param buf 存储FIFO队列的数据区

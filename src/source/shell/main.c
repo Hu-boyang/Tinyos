@@ -1,9 +1,12 @@
 #include "lib_syscall.h"
 #include "main.h"
+#include "fs/file.h"
+
 #include <stdio.h>
 #include <string.h>
 #include <getopt.h>
 #include <stdlib.h>
+#include <sys/file.h>
 
 /// @brief shell的命令行结构体
 static cli_t cli;
@@ -104,6 +107,185 @@ static int do_exit(int argc,char** argv){
     return 0;
 }
 
+/**
+ * @brief ls命令实现的函数
+ * @param argc 参数数量
+ * @param argv 参数的字符串
+ */
+static int do_ls(int argc,char** argv){
+    DIR* p_dir=opendir("temp");
+    if(p_dir == NULL){
+        printf("open dir failed\n");
+        return -1;
+    }
+
+    struct dirent* entry;
+    while((entry=readdir(p_dir))!=NULL){
+        printf("%c %s %d\n",
+            entry->type == FILE_DIR ? 'd' : 'f',
+            entry->name,
+            entry->size
+        );
+    }
+
+    closedir(p_dir);
+    return 0;
+}
+
+/**
+ * @brief less命令实现的函数
+ * @param argc 参数数量
+ * @param argv 参数的字符串
+ */
+static int do_less(int argc,char **argv){
+    int line_mode=0;
+
+    int ch;
+    while((ch=getopt(argc,argv,"lh"))!=-1){
+        switch(ch){
+            case 'h':
+                puts("show file content");
+                puts("Usage: less [-l] file");
+                optind = 1;
+                return 0;
+            case 'l':
+                line_mode = 1;
+                break;
+            case '?':
+                if(optarg){
+                    fprintf(stderr,"Unknown option: -%s\n",optarg);
+                }
+                optind = 1;
+                return -1;
+            default:
+                break;
+        }
+    }
+
+    if(optind > argc - 1){
+        fprintf(stderr,"no file\n");
+    }
+
+    FILE* file=fopen(argv[optind],"r");
+
+    if(file == NULL){
+        fprintf(stderr,"open file %s failed\n",argv[optind]);
+        optind =1;
+        return -1;
+    }
+
+    char* buf=(char*)malloc(256);
+    if(line_mode == 0){
+        while(fgets(buf,256,file) != NULL){
+            fputs(buf,stdout);
+        }
+    }
+    else{
+        // 设置stdin为无缓冲模式
+        // 这样可以实时读取用户输入的字符
+        setvbuf(stdin,NULL,_IONBF,0);
+
+         // 关闭回显,0x1表示关闭回显TTY_CMD_ECHO这里有些问题就用0x1代替
+        ioctl(0,0x1,0,0);
+        while(1){
+            char *b=fgets(buf,256,file);
+            if(b == NULL){
+                break;
+            }
+
+            fputs(buf,stdout);
+
+            int ch;
+            while((ch=fgetc(stdin))!='n'){
+                if(ch == 'q'){
+                    goto less_quit;
+                }
+            }
+        }
+less_quit:
+        setvbuf(stdin,NULL,_IOFBF,BUFSIZ); // 恢复stdin的缓冲模式
+        ioctl(0,0x1,1,0);
+    }
+
+    free(buf);
+
+    fclose(file);
+    optind = 1;
+    return 0;
+
+}
+
+/**
+ * @brief 查找可执行文件的路径
+ * @param filename 文件名
+ * @return 返回文件的路径，如果没有找到则返回NULL
+ */
+static const char* find_exec_path(const char* filename){
+    int fd=open(filename,0);
+    if(fd<0){
+        return (const char*)0;
+    }
+
+    close(fd);
+    return filename;
+}
+
+/**
+ * @brief 复制文件的函数
+ * @param argc 参数数量
+ * @param argv 参数的字符串
+ */
+static int do_cp(int argc,char** argv){
+    if(argc < 3){
+        fprintf(stderr,"no [from] or [to] file\n");
+        return -1;
+    }
+
+    FILE *from,*to;
+
+    from=fopen(argv[1],"rb");
+    to=fopen(argv[2],"wb");
+
+    if(!from || !to){
+        fprintf(stderr,"open file failed\n");
+        goto cp_failed;
+    }
+
+    char *buf=(char*)malloc(256);
+    int size=0;
+    while((size=fread(buf,1,256,from))>0){
+        fwrite(buf,1,size,to);
+    }
+
+    free(buf);
+
+cp_failed:
+    if(from){
+        fclose(from);
+    }
+
+    if(to){
+        fclose(to);
+    }
+
+    return 0;
+}
+
+static int do_rm(int argc,char** argv){
+    if(argc < 2){
+        fprintf(stderr,"no file\n");
+        return -1;
+    }
+
+    int err = unlink(argv[1]);
+    if(err < 0){
+        fprintf(stderr,"remove file %s failed\n",argv[1]);
+        return err;
+    }
+
+    return 0;
+}
+
 /// @brief 命令列表
 static const cli_cmd_t cmd_list[]={
     {
@@ -125,6 +307,26 @@ static const cli_cmd_t cmd_list[]={
         .name="quit",
         .usage="quit -- quit from shell",
         .do_func=do_exit,
+    },
+    {
+        .name="ls",
+        .usage="ls -- list directory",
+        .do_func=do_ls,
+    },
+    {
+        .name="less",
+        .usage="less [-l] file -- show file content",
+        .do_func=do_less,
+    },
+    {
+        .name="cp",
+        .usage="cp src dest",
+        .do_func=do_cp,
+    },
+    {
+        .name="rm",
+        .usage="rm file - remove file",
+        .do_func=do_rm,
     }
 };
 
@@ -186,9 +388,9 @@ static void run_exec_file(const char* path,int argc,char** argv){
         return;
     }
     else if(pid==0){
-        for(int i=0;i<argc;i++){
-            msleep(1000);
-            printf("arg %d=%s",i,argv[i]);
+        int err=execve(path,argv,(char * const *)0);
+        if(err<0){
+            fprintf(stderr,"exec failed %s",path);
         }
         exit(-1);
     }
@@ -212,7 +414,7 @@ static void show_prompt(void){
 int main(int argc,char** argv){
 
     // 打开tty0设备
-    open(argv[0],0);
+    open(argv[0],O_RDWR);
     dup(0);
     dup(0);
 
@@ -261,7 +463,11 @@ int main(int argc,char** argv){
             continue; 
         }
 
-        run_exec_file("",argc,argv);
+        const char *path=find_exec_path(argv[0]);
+        if(path){
+            run_exec_file(path,argc,argv);
+            continue;
+        }
 
         fprintf(stderr,ESC_COLOR_ERROR"Unknown command: %s\n"ESC_COLOR_DEFAULT,cli.curr_input);
     }

@@ -6,7 +6,7 @@
         {
             "label": "image write",
             "type": "shell",
-            "command": "python ${workspaceRoot}/script/img-write.py",
+            "command": "${workspaceRoot}/script/img-write-win.bat",
             "options": {
                 "cwd": "${workspaceRoot}/../image/"
             }

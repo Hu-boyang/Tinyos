@@ -1,6 +1,6 @@
 
-E:/CppProject/TinyOs/src/build/source/boot/boot.elf:     file format elf32-i386
-E:/CppProject/TinyOs/src/build/source/boot/boot.elf
+E:/CppProject/Tinyos/src/build/source/boot/boot.elf:     file format elf32-i386
+E:/CppProject/Tinyos/src/build/source/boot/boot.elf
 architecture: i386, flags 0x00000112:
 EXEC_P, HAS_SYMS, D_PAGED
 start address 0x00007c00

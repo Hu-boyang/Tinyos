@@ -6,7 +6,8 @@
 /// @brief 定义设备类型
 enum{
     DEV_UNKNOWN=0,
-    DEV_TTY
+    DEV_TTY,
+    DEV_DISK,
 };
 
 struct _dev_desc_t;

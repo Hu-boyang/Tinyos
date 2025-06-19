@@ -53,10 +53,10 @@ RM = E:/CppSoft/CMake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/CppProject/TinyOs/src
+CMAKE_SOURCE_DIR = E:/CppProject/Tinyos/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/CppProject/TinyOs/src/build
+CMAKE_BINARY_DIR = E:/CppProject/Tinyos/src/build
 
 # Include any dependencies generated for this target.
 include source/boot/CMakeFiles/boot.dir/depend.make
@@ -74,32 +74,32 @@ source/boot/CMakeFiles/boot.dir/codegen:
 
 source/boot/CMakeFiles/boot.dir/start.S.obj: source/boot/CMakeFiles/boot.dir/flags.make
 source/boot/CMakeFiles/boot.dir/start.S.obj: source/boot/CMakeFiles/boot.dir/includes_ASM.rsp
-source/boot/CMakeFiles/boot.dir/start.S.obj: E:/CppProject/TinyOs/src/source/boot/start.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object source/boot/CMakeFiles/boot.dir/start.S.obj"
-	cd E:/CppProject/TinyOs/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/boot.dir/start.S.obj -c E:/CppProject/TinyOs/src/source/boot/start.S
+source/boot/CMakeFiles/boot.dir/start.S.obj: E:/CppProject/Tinyos/src/source/boot/start.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object source/boot/CMakeFiles/boot.dir/start.S.obj"
+	cd E:/CppProject/Tinyos/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/boot.dir/start.S.obj -c E:/CppProject/Tinyos/src/source/boot/start.S
 
 source/boot/CMakeFiles/boot.dir/start.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/boot.dir/start.S.i"
-	cd E:/CppProject/TinyOs/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E E:/CppProject/TinyOs/src/source/boot/start.S > CMakeFiles/boot.dir/start.S.i
+	cd E:/CppProject/Tinyos/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E E:/CppProject/Tinyos/src/source/boot/start.S > CMakeFiles/boot.dir/start.S.i
 
 source/boot/CMakeFiles/boot.dir/start.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/boot.dir/start.S.s"
-	cd E:/CppProject/TinyOs/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S E:/CppProject/TinyOs/src/source/boot/start.S -o CMakeFiles/boot.dir/start.S.s
+	cd E:/CppProject/Tinyos/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S E:/CppProject/Tinyos/src/source/boot/start.S -o CMakeFiles/boot.dir/start.S.s
 
 source/boot/CMakeFiles/boot.dir/boot.c.obj: source/boot/CMakeFiles/boot.dir/flags.make
 source/boot/CMakeFiles/boot.dir/boot.c.obj: source/boot/CMakeFiles/boot.dir/includes_C.rsp
-source/boot/CMakeFiles/boot.dir/boot.c.obj: E:/CppProject/TinyOs/src/source/boot/boot.c
+source/boot/CMakeFiles/boot.dir/boot.c.obj: E:/CppProject/Tinyos/src/source/boot/boot.c
 source/boot/CMakeFiles/boot.dir/boot.c.obj: source/boot/CMakeFiles/boot.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object source/boot/CMakeFiles/boot.dir/boot.c.obj"
-	cd E:/CppProject/TinyOs/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/boot/CMakeFiles/boot.dir/boot.c.obj -MF CMakeFiles/boot.dir/boot.c.obj.d -o CMakeFiles/boot.dir/boot.c.obj -c E:/CppProject/TinyOs/src/source/boot/boot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object source/boot/CMakeFiles/boot.dir/boot.c.obj"
+	cd E:/CppProject/Tinyos/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/boot/CMakeFiles/boot.dir/boot.c.obj -MF CMakeFiles/boot.dir/boot.c.obj.d -o CMakeFiles/boot.dir/boot.c.obj -c E:/CppProject/Tinyos/src/source/boot/boot.c
 
 source/boot/CMakeFiles/boot.dir/boot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/boot.dir/boot.c.i"
-	cd E:/CppProject/TinyOs/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/TinyOs/src/source/boot/boot.c > CMakeFiles/boot.dir/boot.c.i
+	cd E:/CppProject/Tinyos/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/Tinyos/src/source/boot/boot.c > CMakeFiles/boot.dir/boot.c.i
 
 source/boot/CMakeFiles/boot.dir/boot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/boot.dir/boot.c.s"
-	cd E:/CppProject/TinyOs/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/TinyOs/src/source/boot/boot.c -o CMakeFiles/boot.dir/boot.c.s
+	cd E:/CppProject/Tinyos/src/build/source/boot && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/Tinyos/src/source/boot/boot.c -o CMakeFiles/boot.dir/boot.c.s
 
 # Object files for target boot
 boot_OBJECTS = \
@@ -114,21 +114,21 @@ source/boot/boot.exe: source/boot/CMakeFiles/boot.dir/boot.c.obj
 source/boot/boot.exe: source/boot/CMakeFiles/boot.dir/build.make
 source/boot/boot.exe: source/boot/CMakeFiles/boot.dir/linkLibs.rsp
 source/boot/boot.exe: source/boot/CMakeFiles/boot.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable boot.exe"
-	cd E:/CppProject/TinyOs/src/build/source/boot && x86_64-elf-ld @CMakeFiles/boot.dir/objects1.rsp -m elf_i386  -Ttext=0x7c00  --section-start boot_end=0x7dfe -o E:/CppProject/TinyOs/src/build/source/boot/boot.elf
-	cd E:/CppProject/TinyOs/src/build/source/boot && x86_64-elf-objcopy -O binary boot.elf E:/CppProject/TinyOs/src/../image/boot.bin
-	cd E:/CppProject/TinyOs/src/build/source/boot && x86_64-elf-objdump -x -d -S -m i8086 E:/CppProject/TinyOs/src/build/source/boot/boot.elf > boot_dis.txt
-	cd E:/CppProject/TinyOs/src/build/source/boot && x86_64-elf-readelf -a E:/CppProject/TinyOs/src/build/source/boot/boot.elf > boot_elf.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable boot.exe"
+	cd E:/CppProject/Tinyos/src/build/source/boot && x86_64-elf-ld @CMakeFiles/boot.dir/objects1.rsp -m elf_i386  -Ttext=0x7c00  --section-start boot_end=0x7dfe -o E:/CppProject/Tinyos/src/build/source/boot/boot.elf
+	cd E:/CppProject/Tinyos/src/build/source/boot && x86_64-elf-objcopy -O binary boot.elf E:/CppProject/Tinyos/src/../image/boot.bin
+	cd E:/CppProject/Tinyos/src/build/source/boot && x86_64-elf-objdump -x -d -S -m i8086 E:/CppProject/Tinyos/src/build/source/boot/boot.elf > boot_dis.txt
+	cd E:/CppProject/Tinyos/src/build/source/boot && x86_64-elf-readelf -a E:/CppProject/Tinyos/src/build/source/boot/boot.elf > boot_elf.txt
 
 # Rule to build all files generated by this target.
 source/boot/CMakeFiles/boot.dir/build: source/boot/boot.exe
 .PHONY : source/boot/CMakeFiles/boot.dir/build
 
 source/boot/CMakeFiles/boot.dir/clean:
-	cd E:/CppProject/TinyOs/src/build/source/boot && $(CMAKE_COMMAND) -P CMakeFiles/boot.dir/cmake_clean.cmake
+	cd E:/CppProject/Tinyos/src/build/source/boot && $(CMAKE_COMMAND) -P CMakeFiles/boot.dir/cmake_clean.cmake
 .PHONY : source/boot/CMakeFiles/boot.dir/clean
 
 source/boot/CMakeFiles/boot.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/CppProject/TinyOs/src E:/CppProject/TinyOs/src/source/boot E:/CppProject/TinyOs/src/build E:/CppProject/TinyOs/src/build/source/boot E:/CppProject/TinyOs/src/build/source/boot/CMakeFiles/boot.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/CppProject/Tinyos/src E:/CppProject/Tinyos/src/source/boot E:/CppProject/Tinyos/src/build E:/CppProject/Tinyos/src/build/source/boot E:/CppProject/Tinyos/src/build/source/boot/CMakeFiles/boot.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : source/boot/CMakeFiles/boot.dir/depend
 

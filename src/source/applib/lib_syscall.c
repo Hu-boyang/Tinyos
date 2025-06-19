@@ -3,6 +3,9 @@
 #include "core/syscall.h"
 #include "os_cfg.h"
 
+#include <stdlib.h>
+#include <string.h>
+
 static inline int sys_call(syscall_args_t*args){
     uint32_t addr[]={0,SELECTOR_SYSCALL | 0};
     int ret;
@@ -177,6 +180,78 @@ int wait(int* status){
     syscall_args_t args;
     args.id=SYS_WAIT;
     args.arg0=(int)status;
+
+    return sys_call(&args);
+}
+
+DIR *opendir(const char* path){
+    DIR *dir = (DIR*)malloc(sizeof(DIR));
+    if(dir == NULL){
+        return NULL;
+    }
+
+    syscall_args_t args;
+    args.id=SYS_OPENDIR;
+    args.arg0=(int)path;
+    args.arg1=(int)dir;
+
+    int err=sys_call(&args);
+    if(err < 0){
+        free(dir);
+        return NULL;
+    }
+
+    return dir;
+}
+
+struct dirent *readdir(DIR *dir){
+   syscall_args_t args;
+
+    args.id=SYS_READDIR;
+    args.arg0=(int)dir;
+    args.arg1=(int)&dir->dirent;
+
+    int err=sys_call(&args);
+    if(err < 0){
+        return NULL;
+    }
+
+    return &dir->dirent;
+}
+
+int closedir(DIR *dir){
+    syscall_args_t args;
+
+    args.id=SYS_CLOSEDIR;
+    args.arg0=(int)dir;
+
+    int err=sys_call(&args);
+    if(err < 0){
+        return -1;
+    }
+
+    free(dir);
+    return 0;
+}
+
+int ioctl(int file,int cmd,int arg0,int arg1){
+    syscall_args_t args;
+
+    args.id=SYS_IOCTL;
+
+    args.arg0=(int)file;
+    args.arg1=(int)cmd;
+    args.arg2=(int)arg0;
+    args.arg3=(int)arg1;
+
+    return sys_call(&args);
+}
+
+int unlink(const char *path){
+    syscall_args_t args;
+
+    args.id=SYS_UNLINK;
+    args.arg0=(int)path;
 
     return sys_call(&args);
 }

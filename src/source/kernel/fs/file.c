@@ -2,7 +2,8 @@
 #include "ipc/mutex.h"
 
 /// @brief 文件表
-static file_t file_table[FILE_TABLE_SIZE]; // 文件表
+static file_t file_table[FILE_TABLE_SIZE]; 
+
 /// @brief 文件互斥锁
 static mutex_t file_alloc_mutex; 
 
@@ -38,4 +39,10 @@ void file_free(file_t* file){
 void file_table_init(void){
     mutex_init(&file_alloc_mutex);
     kernel_memset(file_table,0,sizeof(file_table));
+}
+
+void file_inc_ref(file_t* file){
+    mutex_lock(&file_alloc_mutex);
+    file->ref++;
+    mutex_unlock(&file_alloc_mutex);
 }

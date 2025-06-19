@@ -53,10 +53,10 @@ RM = E:/CppSoft/CMake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/CppProject/TinyOs/src
+CMAKE_SOURCE_DIR = E:/CppProject/Tinyos/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/CppProject/TinyOs/src/build
+CMAKE_BINARY_DIR = E:/CppProject/Tinyos/src/build
 
 # Include any dependencies generated for this target.
 include source/loader/CMakeFiles/loader.dir/depend.make
@@ -74,47 +74,47 @@ source/loader/CMakeFiles/loader.dir/codegen:
 
 source/loader/CMakeFiles/loader.dir/start.S.obj: source/loader/CMakeFiles/loader.dir/flags.make
 source/loader/CMakeFiles/loader.dir/start.S.obj: source/loader/CMakeFiles/loader.dir/includes_ASM.rsp
-source/loader/CMakeFiles/loader.dir/start.S.obj: E:/CppProject/TinyOs/src/source/loader/start.S
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object source/loader/CMakeFiles/loader.dir/start.S.obj"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/loader.dir/start.S.obj -c E:/CppProject/TinyOs/src/source/loader/start.S
+source/loader/CMakeFiles/loader.dir/start.S.obj: E:/CppProject/Tinyos/src/source/loader/start.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building ASM object source/loader/CMakeFiles/loader.dir/start.S.obj"
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles/loader.dir/start.S.obj -c E:/CppProject/Tinyos/src/source/loader/start.S
 
 source/loader/CMakeFiles/loader.dir/start.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing ASM source to CMakeFiles/loader.dir/start.S.i"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E E:/CppProject/TinyOs/src/source/loader/start.S > CMakeFiles/loader.dir/start.S.i
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -E E:/CppProject/Tinyos/src/source/loader/start.S > CMakeFiles/loader.dir/start.S.i
 
 source/loader/CMakeFiles/loader.dir/start.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling ASM source to assembly CMakeFiles/loader.dir/start.S.s"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S E:/CppProject/TinyOs/src/source/loader/start.S -o CMakeFiles/loader.dir/start.S.s
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -S E:/CppProject/Tinyos/src/source/loader/start.S -o CMakeFiles/loader.dir/start.S.s
 
 source/loader/CMakeFiles/loader.dir/loader_16.c.obj: source/loader/CMakeFiles/loader.dir/flags.make
 source/loader/CMakeFiles/loader.dir/loader_16.c.obj: source/loader/CMakeFiles/loader.dir/includes_C.rsp
-source/loader/CMakeFiles/loader.dir/loader_16.c.obj: E:/CppProject/TinyOs/src/source/loader/loader_16.c
+source/loader/CMakeFiles/loader.dir/loader_16.c.obj: E:/CppProject/Tinyos/src/source/loader/loader_16.c
 source/loader/CMakeFiles/loader.dir/loader_16.c.obj: source/loader/CMakeFiles/loader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object source/loader/CMakeFiles/loader.dir/loader_16.c.obj"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/loader/CMakeFiles/loader.dir/loader_16.c.obj -MF CMakeFiles/loader.dir/loader_16.c.obj.d -o CMakeFiles/loader.dir/loader_16.c.obj -c E:/CppProject/TinyOs/src/source/loader/loader_16.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object source/loader/CMakeFiles/loader.dir/loader_16.c.obj"
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/loader/CMakeFiles/loader.dir/loader_16.c.obj -MF CMakeFiles/loader.dir/loader_16.c.obj.d -o CMakeFiles/loader.dir/loader_16.c.obj -c E:/CppProject/Tinyos/src/source/loader/loader_16.c
 
 source/loader/CMakeFiles/loader.dir/loader_16.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/loader.dir/loader_16.c.i"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/TinyOs/src/source/loader/loader_16.c > CMakeFiles/loader.dir/loader_16.c.i
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/Tinyos/src/source/loader/loader_16.c > CMakeFiles/loader.dir/loader_16.c.i
 
 source/loader/CMakeFiles/loader.dir/loader_16.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/loader.dir/loader_16.c.s"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/TinyOs/src/source/loader/loader_16.c -o CMakeFiles/loader.dir/loader_16.c.s
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/Tinyos/src/source/loader/loader_16.c -o CMakeFiles/loader.dir/loader_16.c.s
 
 source/loader/CMakeFiles/loader.dir/loader_32.c.obj: source/loader/CMakeFiles/loader.dir/flags.make
 source/loader/CMakeFiles/loader.dir/loader_32.c.obj: source/loader/CMakeFiles/loader.dir/includes_C.rsp
-source/loader/CMakeFiles/loader.dir/loader_32.c.obj: E:/CppProject/TinyOs/src/source/loader/loader_32.c
+source/loader/CMakeFiles/loader.dir/loader_32.c.obj: E:/CppProject/Tinyos/src/source/loader/loader_32.c
 source/loader/CMakeFiles/loader.dir/loader_32.c.obj: source/loader/CMakeFiles/loader.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object source/loader/CMakeFiles/loader.dir/loader_32.c.obj"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/loader/CMakeFiles/loader.dir/loader_32.c.obj -MF CMakeFiles/loader.dir/loader_32.c.obj.d -o CMakeFiles/loader.dir/loader_32.c.obj -c E:/CppProject/TinyOs/src/source/loader/loader_32.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object source/loader/CMakeFiles/loader.dir/loader_32.c.obj"
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/loader/CMakeFiles/loader.dir/loader_32.c.obj -MF CMakeFiles/loader.dir/loader_32.c.obj.d -o CMakeFiles/loader.dir/loader_32.c.obj -c E:/CppProject/Tinyos/src/source/loader/loader_32.c
 
 source/loader/CMakeFiles/loader.dir/loader_32.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/loader.dir/loader_32.c.i"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/TinyOs/src/source/loader/loader_32.c > CMakeFiles/loader.dir/loader_32.c.i
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/Tinyos/src/source/loader/loader_32.c > CMakeFiles/loader.dir/loader_32.c.i
 
 source/loader/CMakeFiles/loader.dir/loader_32.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/loader.dir/loader_32.c.s"
-	cd E:/CppProject/TinyOs/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/TinyOs/src/source/loader/loader_32.c -o CMakeFiles/loader.dir/loader_32.c.s
+	cd E:/CppProject/Tinyos/src/build/source/loader && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/Tinyos/src/source/loader/loader_32.c -o CMakeFiles/loader.dir/loader_32.c.s
 
 # Object files for target loader
 loader_OBJECTS = \
@@ -131,21 +131,21 @@ source/loader/loader.exe: source/loader/CMakeFiles/loader.dir/loader_32.c.obj
 source/loader/loader.exe: source/loader/CMakeFiles/loader.dir/build.make
 source/loader/loader.exe: source/loader/CMakeFiles/loader.dir/linkLibs.rsp
 source/loader/loader.exe: source/loader/CMakeFiles/loader.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable loader.exe"
-	cd E:/CppProject/TinyOs/src/build/source/loader && x86_64-elf-ld @CMakeFiles/loader.dir/objects1.rsp -m elf_i386 -Ttext=0x8000 -o E:/CppProject/TinyOs/src/build/source/loader/loader.elf
-	cd E:/CppProject/TinyOs/src/build/source/loader && x86_64-elf-objcopy -O binary loader.elf E:/CppProject/TinyOs/src/../image/loader.bin
-	cd E:/CppProject/TinyOs/src/build/source/loader && x86_64-elf-objdump -x -d -S -m i8086 E:/CppProject/TinyOs/src/build/source/loader/loader.elf > loader_dis.txt
-	cd E:/CppProject/TinyOs/src/build/source/loader && x86_64-elf-readelf -a E:/CppProject/TinyOs/src/build/source/loader/loader.elf > loader_elf.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable loader.exe"
+	cd E:/CppProject/Tinyos/src/build/source/loader && x86_64-elf-ld @CMakeFiles/loader.dir/objects1.rsp -m elf_i386 -Ttext=0x8000 -o E:/CppProject/Tinyos/src/build/source/loader/loader.elf
+	cd E:/CppProject/Tinyos/src/build/source/loader && x86_64-elf-objcopy -O binary loader.elf E:/CppProject/Tinyos/src/../image/loader.bin
+	cd E:/CppProject/Tinyos/src/build/source/loader && x86_64-elf-objdump -x -d -S -m i8086 E:/CppProject/Tinyos/src/build/source/loader/loader.elf > loader_dis.txt
+	cd E:/CppProject/Tinyos/src/build/source/loader && x86_64-elf-readelf -a E:/CppProject/Tinyos/src/build/source/loader/loader.elf > loader_elf.txt
 
 # Rule to build all files generated by this target.
 source/loader/CMakeFiles/loader.dir/build: source/loader/loader.exe
 .PHONY : source/loader/CMakeFiles/loader.dir/build
 
 source/loader/CMakeFiles/loader.dir/clean:
-	cd E:/CppProject/TinyOs/src/build/source/loader && $(CMAKE_COMMAND) -P CMakeFiles/loader.dir/cmake_clean.cmake
+	cd E:/CppProject/Tinyos/src/build/source/loader && $(CMAKE_COMMAND) -P CMakeFiles/loader.dir/cmake_clean.cmake
 .PHONY : source/loader/CMakeFiles/loader.dir/clean
 
 source/loader/CMakeFiles/loader.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/CppProject/TinyOs/src E:/CppProject/TinyOs/src/source/loader E:/CppProject/TinyOs/src/build E:/CppProject/TinyOs/src/build/source/loader E:/CppProject/TinyOs/src/build/source/loader/CMakeFiles/loader.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/CppProject/Tinyos/src E:/CppProject/Tinyos/src/source/loader E:/CppProject/Tinyos/src/build E:/CppProject/Tinyos/src/build/source/loader E:/CppProject/Tinyos/src/build/source/loader/CMakeFiles/loader.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : source/loader/CMakeFiles/loader.dir/depend
 

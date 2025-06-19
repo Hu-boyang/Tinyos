@@ -182,35 +182,35 @@
 				{
 					"directoryIndex" : 4,
 					"id" : "app::@2ef8eb2e4770df38f87f",
-					"jsonFile" : "target-app-fdc19a26b7fb739d57d4.json",
+					"jsonFile" : "target-app-16623b30fa910cea7c77.json",
 					"name" : "app",
 					"projectIndex" : 4
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "boot::@a4fbfdde3044a49ad01d",
-					"jsonFile" : "target-boot-1cd3a27d72fda6bab5ef.json",
+					"jsonFile" : "target-boot-baa773b4c9cf58c2d3cf.json",
 					"name" : "boot",
 					"projectIndex" : 1
 				},
 				{
 					"directoryIndex" : 3,
 					"id" : "kernel::@483af936ae9a949d521e",
-					"jsonFile" : "target-kernel-666ae27ce3592623d584.json",
+					"jsonFile" : "target-kernel-88bb7a306bbdb6d7c74c.json",
 					"name" : "kernel",
 					"projectIndex" : 3
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "loader::@346703cd72729101d3c6",
-					"jsonFile" : "target-loader-5ef67323e048f010d83a.json",
+					"jsonFile" : "target-loader-1f529b8e12475a059615.json",
 					"name" : "loader",
 					"projectIndex" : 2
 				},
 				{
 					"directoryIndex" : 5,
 					"id" : "shell::@3c59f89bbaefae7d5c66",
-					"jsonFile" : "target-shell-6e4527ac5fb1117eb892.json",
+					"jsonFile" : "target-shell-5079fe1f3132c4a72059.json",
 					"name" : "shell",
 					"projectIndex" : 5
 				}
@@ -220,8 +220,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/CppProject/TinyOs/src/build",
-		"source" : "E:/CppProject/TinyOs/src"
+		"build" : "E:/CppProject/Tinyos/src/build",
+		"source" : "E:/CppProject/Tinyos/src"
 	},
 	"version" : 
 	{

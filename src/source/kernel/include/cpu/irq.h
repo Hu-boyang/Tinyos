@@ -63,6 +63,9 @@
 #define ERR_EXT             (1 << 0)
 #define ERR_IDT             (1 << 1)
 
+/// @brief 硬盘中断号
+#define IRQ14_HARDDISK_PRIMARY (0x20 + 14)
+
 /// @brief 存储中断前各寄存器状态值
 typedef struct _exception_frame_t{
     uint32_t gs,fs,es,ds;

@@ -1,4 +1,4 @@
-# Install script for directory: E:/CppProject/TinyOs/src
+# Install script for directory: E:/CppProject/Tinyos/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,18 +39,18 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("E:/CppProject/TinyOs/src/build/source/boot/cmake_install.cmake")
-  include("E:/CppProject/TinyOs/src/build/source/loader/cmake_install.cmake")
-  include("E:/CppProject/TinyOs/src/build/source/kernel/cmake_install.cmake")
-  include("E:/CppProject/TinyOs/src/build/source/applib/cmake_install.cmake")
-  include("E:/CppProject/TinyOs/src/build/source/shell/cmake_install.cmake")
+  include("E:/CppProject/Tinyos/src/build/source/boot/cmake_install.cmake")
+  include("E:/CppProject/Tinyos/src/build/source/loader/cmake_install.cmake")
+  include("E:/CppProject/Tinyos/src/build/source/kernel/cmake_install.cmake")
+  include("E:/CppProject/Tinyos/src/build/source/applib/cmake_install.cmake")
+  include("E:/CppProject/Tinyos/src/build/source/shell/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "E:/CppProject/TinyOs/src/build/install_local_manifest.txt"
+  file(WRITE "E:/CppProject/Tinyos/src/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -66,6 +66,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "E:/CppProject/TinyOs/src/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "E:/CppProject/Tinyos/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

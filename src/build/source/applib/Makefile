@@ -57,10 +57,10 @@ RM = E:/CppSoft/CMake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/CppProject/TinyOs/src
+CMAKE_SOURCE_DIR = E:/CppProject/Tinyos/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/CppProject/TinyOs/src/build
+CMAKE_BINARY_DIR = E:/CppProject/Tinyos/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles E:/CppProject/TinyOs/src/build/source/applib//CMakeFiles/progress.marks
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles E:/CppProject/Tinyos/src/build/source/applib//CMakeFiles/progress.marks
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/clean
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/preinstall
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/preinstall
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/applib/CMakeFiles/app.dir/rule:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/CMakeFiles/app.dir/rule
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/CMakeFiles/app.dir/rule
 .PHONY : source/applib/CMakeFiles/app.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ app: source/applib/CMakeFiles/app.dir/rule
 
 # fast build rule for target.
 app/fast:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/build
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/build
 .PHONY : app/fast
 
 crt0.obj: crt0.S.obj
@@ -135,7 +135,7 @@ crt0.obj: crt0.S.obj
 
 # target to build an object file
 crt0.S.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/crt0.S.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/crt0.S.obj
 .PHONY : crt0.S.obj
 
 cstart.obj: cstart.c.obj
@@ -143,7 +143,7 @@ cstart.obj: cstart.c.obj
 
 # target to build an object file
 cstart.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/cstart.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/cstart.c.obj
 .PHONY : cstart.c.obj
 
 cstart.i: cstart.c.i
@@ -151,7 +151,7 @@ cstart.i: cstart.c.i
 
 # target to preprocess a source file
 cstart.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/cstart.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/cstart.c.i
 .PHONY : cstart.c.i
 
 cstart.s: cstart.c.s
@@ -159,7 +159,7 @@ cstart.s: cstart.c.s
 
 # target to generate assembly for a file
 cstart.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/cstart.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/cstart.c.s
 .PHONY : cstart.c.s
 
 lib_syscall.obj: lib_syscall.c.obj
@@ -167,7 +167,7 @@ lib_syscall.obj: lib_syscall.c.obj
 
 # target to build an object file
 lib_syscall.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/lib_syscall.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/lib_syscall.c.obj
 .PHONY : lib_syscall.c.obj
 
 lib_syscall.i: lib_syscall.c.i
@@ -175,7 +175,7 @@ lib_syscall.i: lib_syscall.c.i
 
 # target to preprocess a source file
 lib_syscall.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/lib_syscall.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/lib_syscall.c.i
 .PHONY : lib_syscall.c.i
 
 lib_syscall.s: lib_syscall.c.s
@@ -183,7 +183,7 @@ lib_syscall.s: lib_syscall.c.s
 
 # target to generate assembly for a file
 lib_syscall.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/lib_syscall.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/lib_syscall.c.s
 .PHONY : lib_syscall.c.s
 
 # Help Target
@@ -213,6 +213,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

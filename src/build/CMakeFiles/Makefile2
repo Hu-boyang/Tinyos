@@ -54,10 +54,10 @@ RM = E:/CppSoft/CMake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/CppProject/TinyOs/src
+CMAKE_SOURCE_DIR = E:/CppProject/Tinyos/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/CppProject/TinyOs/src/build
+CMAKE_BINARY_DIR = E:/CppProject/Tinyos/src/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -196,14 +196,14 @@ source/shell/clean: source/shell/CMakeFiles/shell.dir/clean
 source/boot/CMakeFiles/boot.dir/all:
 	$(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/depend
 	$(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=5,6,7 "Built target boot"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=5,6,7 "Built target boot"
 .PHONY : source/boot/CMakeFiles/boot.dir/all
 
 # Build rule for subdir invocation for target.
 source/boot/CMakeFiles/boot.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/CMakeFiles/boot.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : source/boot/CMakeFiles/boot.dir/rule
 
 # Convenience name for target.
@@ -227,14 +227,14 @@ source/boot/CMakeFiles/boot.dir/clean:
 source/loader/CMakeFiles/loader.dir/all:
 	$(MAKE) $(MAKESILENT) -f source/loader/CMakeFiles/loader.dir/build.make source/loader/CMakeFiles/loader.dir/depend
 	$(MAKE) $(MAKESILENT) -f source/loader/CMakeFiles/loader.dir/build.make source/loader/CMakeFiles/loader.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=31,32,33,34 "Built target loader"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=35,36,37,38 "Built target loader"
 .PHONY : source/loader/CMakeFiles/loader.dir/all
 
 # Build rule for subdir invocation for target.
 source/loader/CMakeFiles/loader.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/loader/CMakeFiles/loader.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : source/loader/CMakeFiles/loader.dir/rule
 
 # Convenience name for target.
@@ -258,14 +258,14 @@ source/loader/CMakeFiles/loader.dir/clean:
 source/kernel/CMakeFiles/kernel.dir/all: source/applib/CMakeFiles/app.dir/all
 	$(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/depend
 	$(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30 "Built target kernel"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34 "Built target kernel"
 .PHONY : source/kernel/CMakeFiles/kernel.dir/all
 
 # Build rule for subdir invocation for target.
 source/kernel/CMakeFiles/kernel.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 31
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/CMakeFiles/kernel.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : source/kernel/CMakeFiles/kernel.dir/rule
 
 # Convenience name for target.
@@ -289,14 +289,14 @@ source/kernel/CMakeFiles/kernel.dir/clean:
 source/applib/CMakeFiles/app.dir/all:
 	$(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/depend
 	$(MAKE) $(MAKESILENT) -f source/applib/CMakeFiles/app.dir/build.make source/applib/CMakeFiles/app.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=1,2,3,4 "Built target app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=1,2,3,4 "Built target app"
 .PHONY : source/applib/CMakeFiles/app.dir/all
 
 # Build rule for subdir invocation for target.
 source/applib/CMakeFiles/app.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/applib/CMakeFiles/app.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : source/applib/CMakeFiles/app.dir/rule
 
 # Convenience name for target.
@@ -320,14 +320,14 @@ source/applib/CMakeFiles/app.dir/clean:
 source/shell/CMakeFiles/shell.dir/all: source/applib/CMakeFiles/app.dir/all
 	$(MAKE) $(MAKESILENT) -f source/shell/CMakeFiles/shell.dir/build.make source/shell/CMakeFiles/shell.dir/depend
 	$(MAKE) $(MAKESILENT) -f source/shell/CMakeFiles/shell.dir/build.make source/shell/CMakeFiles/shell.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=35,36 "Built target shell"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=39,40 "Built target shell"
 .PHONY : source/shell/CMakeFiles/shell.dir/all
 
 # Build rule for subdir invocation for target.
 source/shell/CMakeFiles/shell.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/shell/CMakeFiles/shell.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : source/shell/CMakeFiles/shell.dir/rule
 
 # Convenience name for target.

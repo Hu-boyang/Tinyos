@@ -351,6 +351,25 @@ static void free_task(task_t* task){
     mutex_unlock(&table_mutex);
 }
 
+/**
+ * @brief 复制父进程打开的文件到子进程
+ * @param child_task 子进程
+ */
+static void copy_opened_files(task_t* child_task){
+    task_t* parent=task_current();
+    for(int i=0;i<TASK_OFILE_NR;i++){
+
+        file_t* file=parent->file_table[i];
+        if(file){
+            file_inc_ref(file);
+            child_task->file_table[i]=file;
+        }
+    }
+}
+
+/**
+ * @brief 创建一个新的任务
+ */
 int sys_fork(void){
     task_t* parent_task=task_current();
     task_t* child_task=alloc_task();
@@ -364,6 +383,8 @@ int sys_fork(void){
     if(err < 0){
         goto fork_failed;
     }
+
+    copy_opened_files(child_task);
 
     tss_t* tss=&child_task->tss;
     tss->eax= 0;
@@ -498,7 +519,7 @@ static int copy_args(char* to,uint32_t page_dir,int argc,char**argv){
     task_args.argv=(char**)(to+sizeof(task_args_t));
 
     char* dest_arg=to+sizeof(task_args_t)+sizeof(char*)*argc;
-    char** dest_arg_tb=(char**)memory_get_paddr(page_dir,(uint32_t)(to+sizeof(task_args_t)));
+    char** dest_argv_tb=(char**)memory_get_paddr(page_dir,(uint32_t)(to+sizeof(task_args_t)));
 
     for(int i=0;i<argc;i++){
         char* from=argv[i];
@@ -506,10 +527,15 @@ static int copy_args(char* to,uint32_t page_dir,int argc,char**argv){
         int err=memory_copy_uvm_data((uint32_t)dest_arg,page_dir,(uint32_t)from,len);
         ASSERT(err >= 0);
 
-        dest_arg_tb[i]=dest_arg;
+        dest_argv_tb[i]=dest_arg;
         dest_arg+=len;
 
     }
+
+    // if(argc > 0){
+    //     //dest_argv_tb[argc]='\0';
+    // }
+    
     return memory_copy_uvm_data((uint32_t)to,page_dir,(uint32_t)&task_args,sizeof(task_args));
 
 }
@@ -675,6 +701,8 @@ void sys_exit(int status){
  */
 int sys_wait(int* status){
     task_t* curr_task=task_current();
+
+    // 注意这个for(;;){}的位置
     for(;;){
         mutex_lock(&table_mutex);
 

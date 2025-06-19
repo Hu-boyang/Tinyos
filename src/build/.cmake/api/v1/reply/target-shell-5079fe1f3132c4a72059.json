@@ -69,19 +69,19 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/source"
+					"path" : "E:/CppProject/Tinyos/src/source"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/source/kernel/include"
+					"path" : "E:/CppProject/Tinyos/src/source/kernel/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/../newlib/i686-elf/include"
+					"path" : "E:/CppProject/Tinyos/src/../newlib/i686-elf/include"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/CppProject/TinyOs/src/source/shell/../applib"
+					"path" : "E:/CppProject/Tinyos/src/source/shell/../applib"
 				}
 			],
 			"language" : "C",
@@ -108,7 +108,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-m elf_i386 -T E:/CppProject/TinyOs/src/source/shell/link.lds -L E:/CppProject/TinyOs/src/build/source/applib/ -lapp -L E:/CppProject/TinyOs/src/build/../../newlib/i686-elf/lib -lm -lc",
+				"fragment" : "-m elf_i386 -T E:/CppProject/Tinyos/src/source/shell/link.lds -L E:/CppProject/Tinyos/src/build/source/applib/ -lapp -L E:/CppProject/Tinyos/src/build/../../newlib/i686-elf/lib -lm -lc",
 				"role" : "flags"
 			},
 			{

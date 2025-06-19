@@ -1,18 +1,18 @@
 source/kernel/CMakeFiles/kernel.dir/init/first_task.c.obj: \
- E:/CppProject/TinyOs/src/source/kernel/init/first_task.c \
- E:/CppProject/TinyOs/src/source/kernel/include/tools/log.h \
- E:/CppProject/TinyOs/src/source/comm/cpu_instr.h \
- E:/CppProject/TinyOs/src/source/comm/types.h \
- E:/CppProject/TinyOs/src/source/kernel/include/tools/klib.h \
+ E:/CppProject/Tinyos/src/source/kernel/init/first_task.c \
+ E:/CppProject/Tinyos/src/source/kernel/include/tools/log.h \
+ E:/CppProject/Tinyos/src/source/comm/cpu_instr.h \
+ E:/CppProject/Tinyos/src/source/comm/types.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/tools/klib.h \
  e:\cppsoft\x86_64-elf-tools-windows\lib\gcc\x86_64-elf\7.1.0\include\stdarg.h \
- E:/CppProject/TinyOs/src/source/comm/types.h \
- E:/CppProject/TinyOs/src/source/kernel/include/cpu/irq.h \
- E:/CppProject/TinyOs/src/source/kernel/include/cpu/cpu.h \
- E:/CppProject/TinyOs/src/source/kernel/include/os_cfg.h \
- E:/CppProject/TinyOs/src/source/kernel/include/core/task.h \
- E:/CppProject/TinyOs/src/source/kernel/include/tools/list.h \
- E:/CppProject/TinyOs/src/source/kernel/include/fs/file.h \
- E:/CppProject/TinyOs/src/source/applib/lib_syscall.h \
+ E:/CppProject/Tinyos/src/source/comm/types.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/cpu/irq.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/cpu/cpu.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/os_cfg.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/core/task.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/tools/list.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/fs/file.h \
+ E:/CppProject/Tinyos/src/source/applib/lib_syscall.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\stat.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\_ansi.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\newlib.h \
@@ -43,6 +43,6 @@ source/kernel/CMakeFiles/kernel.dir/init/first_task.c.obj: \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\sched.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\types.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\_locale.h \
- E:/CppProject/TinyOs/src/source/kernel/include/dev/tty.h \
- E:/CppProject/TinyOs/src/source/kernel/include/dev/dev.h \
- E:/CppProject/TinyOs/src/source/kernel/include/ipc/sem.h
+ E:/CppProject/Tinyos/src/source/kernel/include/dev/tty.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/dev/dev.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/ipc/sem.h

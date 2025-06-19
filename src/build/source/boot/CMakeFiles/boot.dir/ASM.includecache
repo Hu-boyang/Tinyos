@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-E:/CppProject/TinyOs/src/source/boot/boot.h
+E:/CppProject/Tinyos/src/source/boot/boot.h
 
-E:/CppProject/TinyOs/src/source/boot/start.S
+E:/CppProject/Tinyos/src/source/boot/start.S
 boot.h
-E:/CppProject/TinyOs/src/source/boot/boot.h
+E:/CppProject/Tinyos/src/source/boot/boot.h
 

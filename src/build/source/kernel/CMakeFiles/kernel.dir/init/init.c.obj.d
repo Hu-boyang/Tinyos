@@ -1,29 +1,29 @@
 source/kernel/CMakeFiles/kernel.dir/init/init.c.obj: \
- E:/CppProject/TinyOs/src/source/kernel/init/init.c \
- E:/CppProject/TinyOs/src/source/kernel/init/init.h \
- E:/CppProject/TinyOs/src/source/kernel/include/core/memory.h \
- E:/CppProject/TinyOs/src/source/comm/types.h \
- E:/CppProject/TinyOs/src/source/comm/boot_info.h \
- E:/CppProject/TinyOs/src/source/comm/types.h \
- E:/CppProject/TinyOs/src/source/kernel/include/tools/bitmap.h \
- E:/CppProject/TinyOs/src/source/kernel/include/ipc/mutex.h \
- E:/CppProject/TinyOs/src/source/kernel/include/tools/list.h \
- E:/CppProject/TinyOs/src/source/kernel/include/core/task.h \
- E:/CppProject/TinyOs/src/source/kernel/include/cpu/cpu.h \
- E:/CppProject/TinyOs/src/source/kernel/include/os_cfg.h \
- E:/CppProject/TinyOs/src/source/comm/cpu_instr.h \
- E:/CppProject/TinyOs/src/source/kernel/include/tools/klib.h \
+ E:/CppProject/Tinyos/src/source/kernel/init/init.c \
+ E:/CppProject/Tinyos/src/source/kernel/init/init.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/core/memory.h \
+ E:/CppProject/Tinyos/src/source/comm/types.h \
+ E:/CppProject/Tinyos/src/source/comm/boot_info.h \
+ E:/CppProject/Tinyos/src/source/comm/types.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/tools/bitmap.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/ipc/mutex.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/tools/list.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/core/task.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/cpu/cpu.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/os_cfg.h \
+ E:/CppProject/Tinyos/src/source/comm/cpu_instr.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/tools/klib.h \
  e:\cppsoft\x86_64-elf-tools-windows\lib\gcc\x86_64-elf\7.1.0\include\stdarg.h \
- E:/CppProject/TinyOs/src/source/kernel/include/tools/log.h \
- E:/CppProject/TinyOs/src/source/kernel/include/cpu/irq.h \
- E:/CppProject/TinyOs/src/source/kernel/include/fs/file.h \
- E:/CppProject/TinyOs/src/source/kernel/include/dev/console.h \
- E:/CppProject/TinyOs/src/source/kernel/include/dev/tty.h \
- E:/CppProject/TinyOs/src/source/kernel/include/dev/dev.h \
- E:/CppProject/TinyOs/src/source/kernel/include/ipc/sem.h \
- E:/CppProject/TinyOs/src/source/kernel/include/dev/time.h \
- E:/CppProject/TinyOs/src/source/kernel/include/dev/kbd.h \
- E:/CppProject/TinyOs/src/source/kernel/include/fs/fs.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/tools/log.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/cpu/irq.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/fs/file.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/dev/console.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/dev/tty.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/dev/dev.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/ipc/sem.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/dev/time.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/dev/kbd.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/fs/fs.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\stat.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\_ansi.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\newlib.h \
@@ -53,4 +53,6 @@ source/kernel/CMakeFiles/kernel.dir/init/init.c.obj: \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\_pthreadtypes.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\sched.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\types.h \
- e:\cppproject\tinyos\newlib\i686-elf\include\sys\_locale.h
+ e:\cppproject\tinyos\newlib\i686-elf\include\sys\_locale.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/fs/fatfs/fatfs.h \
+ E:/CppProject/Tinyos/src/source/applib/lib_syscall.h

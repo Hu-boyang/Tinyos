@@ -195,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/CppProject/TinyOs/src/build"
+			"value" : "e:/CppProject/Tinyos/src/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -587,7 +587,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/build/CMakeFiles/pkgRedirects"
+			"value" : "E:/CppProject/Tinyos/src/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/CppProject/TinyOs/src"
+			"value" : "E:/CppProject/Tinyos/src"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1295,7 +1295,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/build/source/applib"
+			"value" : "E:/CppProject/Tinyos/src/build/source/applib"
 		},
 		{
 			"name" : "app_IS_TOP_LEVEL",
@@ -1319,7 +1319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/source/applib"
+			"value" : "E:/CppProject/Tinyos/src/source/applib"
 		},
 		{
 			"name" : "boot_BINARY_DIR",
@@ -1331,7 +1331,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/build/source/boot"
+			"value" : "E:/CppProject/Tinyos/src/build/source/boot"
 		},
 		{
 			"name" : "boot_IS_TOP_LEVEL",
@@ -1355,7 +1355,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/source/boot"
+			"value" : "E:/CppProject/Tinyos/src/source/boot"
 		},
 		{
 			"name" : "kernel_BINARY_DIR",
@@ -1367,7 +1367,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/build/source/kernel"
+			"value" : "E:/CppProject/Tinyos/src/build/source/kernel"
 		},
 		{
 			"name" : "kernel_IS_TOP_LEVEL",
@@ -1391,7 +1391,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/source/kernel"
+			"value" : "E:/CppProject/Tinyos/src/source/kernel"
 		},
 		{
 			"name" : "loader_BINARY_DIR",
@@ -1403,7 +1403,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/build/source/loader"
+			"value" : "E:/CppProject/Tinyos/src/build/source/loader"
 		},
 		{
 			"name" : "loader_IS_TOP_LEVEL",
@@ -1427,7 +1427,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/source/loader"
+			"value" : "E:/CppProject/Tinyos/src/source/loader"
 		},
 		{
 			"name" : "os_BINARY_DIR",
@@ -1439,7 +1439,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/build"
+			"value" : "E:/CppProject/Tinyos/src/build"
 		},
 		{
 			"name" : "os_IS_TOP_LEVEL",
@@ -1463,7 +1463,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src"
+			"value" : "E:/CppProject/Tinyos/src"
 		},
 		{
 			"name" : "shell_BINARY_DIR",
@@ -1475,7 +1475,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/build/source/shell"
+			"value" : "E:/CppProject/Tinyos/src/build/source/shell"
 		},
 		{
 			"name" : "shell_IS_TOP_LEVEL",
@@ -1499,7 +1499,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/CppProject/TinyOs/src/source/shell"
+			"value" : "E:/CppProject/Tinyos/src/source/shell"
 		}
 	],
 	"kind" : "cache",

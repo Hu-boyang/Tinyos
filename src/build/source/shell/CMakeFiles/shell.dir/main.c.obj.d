@@ -1,5 +1,5 @@
 source/shell/CMakeFiles/shell.dir/main.c.obj: \
- E:/CppProject/TinyOs/src/source/shell/main.c \
+ E:/CppProject/Tinyos/src/source/shell/main.c \
  e:\cppproject\tinyos\src\source\applib\lib_syscall.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\stat.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\_ansi.h \
@@ -31,7 +31,9 @@ source/shell/CMakeFiles/shell.dir/main.c.obj: \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\sched.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\types.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\_locale.h \
- E:/CppProject/TinyOs/src/source/shell/main.h \
+ E:/CppProject/Tinyos/src/source/shell/main.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/fs/file.h \
+ E:/CppProject/Tinyos/src/source/comm/types.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\stdio.h \
  e:\cppsoft\x86_64-elf-tools-windows\lib\gcc\x86_64-elf\7.1.0\include\stdarg.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\stdio.h \
@@ -41,4 +43,7 @@ source/shell/CMakeFiles/shell.dir/main.c.obj: \
  e:\cppproject\tinyos\newlib\i686-elf\include\getopt.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\stdlib.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\stdlib.h \
- e:\cppproject\tinyos\newlib\i686-elf\include\alloca.h
+ e:\cppproject\tinyos\newlib\i686-elf\include\alloca.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\sys\file.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\sys\fcntl.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\sys\_default_fcntl.h

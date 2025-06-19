@@ -593,8 +593,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "E:/CppProject/TinyOs/src/build",
-		"source" : "E:/CppProject/TinyOs/src"
+		"build" : "E:/CppProject/Tinyos/src/build",
+		"source" : "E:/CppProject/Tinyos/src"
 	},
 	"version" : 
 	{

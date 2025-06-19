@@ -1,4 +1,5 @@
 #include "cpu/irq.h"
+#include "core/task.h"
 
 // 初始化8259，开启中断
 static void init_pic(void){
@@ -60,8 +61,9 @@ void irq_disable(int irq_num){
 	}
 }
 
-// 定义中断向量表
+/// @brief 中断向量表
 static gate_desc_t idt_table[IDT_TABLE_NR];
+
 void irq_init(void){
     for(uint32_t i=0;i<IDT_TABLE_NR;i++){
         gate_desc_set(idt_table+i,KERNEL_SELECTOR_CS,(uint32_t)exception_handler_unknown,
@@ -96,7 +98,11 @@ void irq_init(void){
 
 }
 
-// 将对应的中断添加到idt表中
+/**
+ * @brief 安装中断处理函数
+ * @param irq_num 中断号
+ * @param handler 中断处理函数
+ */
 int irq_install(int irq_num,irq_handler_t handler){
     if(irq_num >= IDT_TABLE_NR){
         return -1;
@@ -210,9 +216,16 @@ void do_handler_general_protection(exception_frame_t * frame) {
     log_printf("segment index: %d", frame->error_code & 0xFFF8);
 
     dump_core_regs(frame);
-    while (1) {
-        hlt();
-    }	
+
+	// 判断是否是用户态异常直接退出，如果是内核态异常则陷入死循环
+	if(frame->cs & 0x3){
+		sys_exit(frame->error_code);
+	}
+	else{
+		while (1) {
+        	hlt();
+    	}	
+	}
 }
 
 void do_handler_page_fault(exception_frame_t * frame) {

@@ -57,10 +57,10 @@ RM = E:/CppSoft/CMake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/CppProject/TinyOs/src
+CMAKE_SOURCE_DIR = E:/CppProject/Tinyos/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/CppProject/TinyOs/src/build
+CMAKE_BINARY_DIR = E:/CppProject/Tinyos/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles E:/CppProject/TinyOs/src/build/source/boot//CMakeFiles/progress.marks
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles E:/CppProject/Tinyos/src/build/source/boot//CMakeFiles/progress.marks
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/clean
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/preinstall
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/preinstall
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/boot/CMakeFiles/boot.dir/rule:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/CMakeFiles/boot.dir/rule
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/boot/CMakeFiles/boot.dir/rule
 .PHONY : source/boot/CMakeFiles/boot.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ boot: source/boot/CMakeFiles/boot.dir/rule
 
 # fast build rule for target.
 boot/fast:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/build
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/build
 .PHONY : boot/fast
 
 boot.obj: boot.c.obj
@@ -135,7 +135,7 @@ boot.obj: boot.c.obj
 
 # target to build an object file
 boot.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/boot.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/boot.c.obj
 .PHONY : boot.c.obj
 
 boot.i: boot.c.i
@@ -143,7 +143,7 @@ boot.i: boot.c.i
 
 # target to preprocess a source file
 boot.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/boot.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/boot.c.i
 .PHONY : boot.c.i
 
 boot.s: boot.c.s
@@ -151,7 +151,7 @@ boot.s: boot.c.s
 
 # target to generate assembly for a file
 boot.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/boot.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/boot.c.s
 .PHONY : boot.c.s
 
 start.obj: start.S.obj
@@ -159,7 +159,7 @@ start.obj: start.S.obj
 
 # target to build an object file
 start.S.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/start.S.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/boot/CMakeFiles/boot.dir/build.make source/boot/CMakeFiles/boot.dir/start.S.obj
 .PHONY : start.S.obj
 
 # Help Target
@@ -186,6 +186,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

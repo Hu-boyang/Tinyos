@@ -1,5 +1,5 @@
 source/applib/CMakeFiles/app.dir/cstart.c.obj: \
- E:/CppProject/TinyOs/src/source/applib/cstart.c \
+ E:/CppProject/Tinyos/src/source/applib/cstart.c \
  e:\cppproject\tinyos\newlib\i686-elf\include\stdint.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\_default_types.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\features.h \
@@ -20,7 +20,7 @@ source/applib/CMakeFiles/app.dir/cstart.c.obj: \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\cdefs.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\stdlib.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\alloca.h \
- E:/CppProject/TinyOs/src/source/applib/lib_syscall.h \
+ E:/CppProject/Tinyos/src/source/applib/lib_syscall.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\stat.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\time.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\time.h \

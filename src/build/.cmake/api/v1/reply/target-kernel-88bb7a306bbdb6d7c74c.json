@@ -63,22 +63,22 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/source"
+					"path" : "E:/CppProject/Tinyos/src/source"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/source/kernel/include"
+					"path" : "E:/CppProject/Tinyos/src/source/kernel/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/../newlib/i686-elf/include"
+					"path" : "E:/CppProject/Tinyos/src/../newlib/i686-elf/include"
 				}
 			],
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
 				0,
-				34
+				40
 			]
 		},
 		{
@@ -92,15 +92,15 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/source"
+					"path" : "E:/CppProject/Tinyos/src/source"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/source/kernel/include"
+					"path" : "E:/CppProject/Tinyos/src/source/kernel/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "E:/CppProject/TinyOs/src/../newlib/i686-elf/include"
+					"path" : "E:/CppProject/Tinyos/src/../newlib/i686-elf/include"
 				}
 			],
 			"language" : "C",
@@ -118,14 +118,18 @@
 				10,
 				11,
 				12,
-				33,
-				35,
-				37,
-				38,
+				13,
+				14,
+				15,
 				39,
-				40,
 				41,
-				42
+				43,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50
 			]
 		}
 	],
@@ -146,7 +150,7 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-m elf_i386 -T E:/CppProject/TinyOs/src/source/kernel/kernel.lds -L E:/CppProject/TinyOs/src/build/source/applib/ -lapp",
+				"fragment" : "-m elf_i386 -T E:/CppProject/Tinyos/src/source/kernel/kernel.lds -L E:/CppProject/Tinyos/src/build/source/applib/",
 				"role" : "flags"
 			},
 			{
@@ -170,7 +174,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				34
+				40
 			]
 		},
 		{
@@ -189,23 +193,24 @@
 				10,
 				11,
 				12,
-				33,
-				35,
-				37,
-				38,
+				13,
+				14,
+				15,
 				39,
-				40,
 				41,
-				42
+				43,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50
 			]
 		},
 		{
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				13,
-				14,
-				15,
 				16,
 				17,
 				18,
@@ -223,7 +228,14 @@
 				30,
 				31,
 				32,
-				36
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				42,
+				44
 			]
 		}
 	],
@@ -280,6 +292,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
+			"path" : "source/kernel/dev/disk.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
 			"path" : "source/kernel/dev/kbd.c",
 			"sourceGroupIndex" : 1
 		},
@@ -293,6 +311,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
 			"path" : "source/kernel/dev/tty.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "source/kernel/fs/devfs/devfs.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "source/kernel/fs/fatfs/fatfs.c",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -349,6 +379,11 @@
 		},
 		{
 			"backtrace" : 1,
+			"path" : "source/kernel/include/dev/disk.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
 			"path" : "source/kernel/include/dev/kbd.h",
 			"sourceGroupIndex" : 2
 		},
@@ -360,6 +395,16 @@
 		{
 			"backtrace" : 1,
 			"path" : "source/kernel/include/dev/tty.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "source/kernel/include/fs/devfs/devfs.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"path" : "source/kernel/include/fs/fatfs/fatfs.h",
 			"sourceGroupIndex" : 2
 		},
 		{
@@ -428,6 +473,17 @@
 		{
 			"backtrace" : 1,
 			"path" : "source/kernel/init/init.h",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "source/kernel/init/lib_syscall.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "source/kernel/init/lib_syscall.h",
 			"sourceGroupIndex" : 2
 		},
 		{

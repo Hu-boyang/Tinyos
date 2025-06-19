@@ -1,6 +1,6 @@
 source/applib/CMakeFiles/app.dir/lib_syscall.c.obj: \
- E:/CppProject/TinyOs/src/source/applib/lib_syscall.c \
- E:/CppProject/TinyOs/src/source/applib/lib_syscall.h \
+ E:/CppProject/Tinyos/src/source/applib/lib_syscall.c \
+ E:/CppProject/Tinyos/src/source/applib/lib_syscall.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\stat.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\_ansi.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\newlib.h \
@@ -31,6 +31,12 @@ source/applib/CMakeFiles/app.dir/lib_syscall.c.obj: \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\sched.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\machine\types.h \
  e:\cppproject\tinyos\newlib\i686-elf\include\sys\_locale.h \
- E:/CppProject/TinyOs/src/source/comm/types.h \
- E:/CppProject/TinyOs/src/source/kernel/include/core/syscall.h \
- E:/CppProject/TinyOs/src/source/kernel/include/os_cfg.h
+ E:/CppProject/Tinyos/src/source/comm/types.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/core/syscall.h \
+ E:/CppProject/Tinyos/src/source/kernel/include/os_cfg.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\stdlib.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\machine\stdlib.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\alloca.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\string.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\strings.h \
+ e:\cppproject\tinyos\newlib\i686-elf\include\sys\string.h

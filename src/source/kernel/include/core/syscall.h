@@ -24,6 +24,13 @@
 
 /// @brief DUP系统调用函数的函数号
 #define SYS_DUP            58
+#define SYS_IOCTL          59
+
+#define SYS_OPENDIR        60
+#define SYS_READDIR        61
+#define SYS_CLOSEDIR       62
+#define SYS_UNLINK         63
+          
 
 typedef struct _syscall_frame_t{
     uint32_t eflags;

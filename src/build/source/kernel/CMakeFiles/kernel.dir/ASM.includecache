@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/CppProject/TinyOs/src/source/kernel/include/os_cfg.h
+E:/CppProject/Tinyos/src/source/kernel/include/os_cfg.h
 
-E:/CppProject/TinyOs/src/source/kernel/init/first_task_entry.S
+E:/CppProject/Tinyos/src/source/kernel/init/first_task_entry.S
 
-E:/CppProject/TinyOs/src/source/kernel/init/start.S
+E:/CppProject/Tinyos/src/source/kernel/init/start.S
 os_cfg.h
-E:/CppProject/TinyOs/src/source/kernel/init/os_cfg.h
+E:/CppProject/Tinyos/src/source/kernel/init/os_cfg.h
 

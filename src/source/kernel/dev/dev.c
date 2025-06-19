@@ -4,10 +4,12 @@
 #define DEV_TABLE_SIZE         128
 
 extern dev_desc_t dev_tty_desc;
+extern dev_desc_t dev_disk_desc;
 
-// dev设备注册
+/// @brief 注册对应设备操作函数表
 static dev_desc_t* dev_desc_tbl[]={
     &dev_tty_desc,
+    &dev_disk_desc,
 };
 
 static device_t dev_tb[DEV_TABLE_SIZE];
@@ -40,6 +42,7 @@ int dev_open(int major,int minor,void* data){
         device_t* dev=dev_tb+i;
         if(dev->open_count == 0){
             free_dev=dev;
+            break;
         }
         else if((dev->desc->major == major) && (dev->minor == minor)){
             dev->open_count++;

@@ -1,7 +1,7 @@
-In archive E:/CppProject/TinyOs/src/build/source/applib/libapp.a:
+In archive E:/CppProject/Tinyos/src/build/source/applib/libapp.a:
 
 crt0.S.obj:     file format elf32-i386
-rw-rw-rw- 0/0   1308 Apr 25 23:35 2025 crt0.S.obj
+rw-rw-rw- 0/0   1308 Jun 17 11:46 2025 crt0.S.obj
 architecture: i386, flags 0x00000011:
 HAS_RELOC, HAS_SYMS
 start address 0x00000000
@@ -56,7 +56,7 @@ _start:
 			c: R_386_PC32	cstart
 
 cstart.c.obj:     file format elf32-i386
-rw-rw-rw- 0/0   7400 May 03 11:30 2025 cstart.c.obj
+rw-rw-rw- 0/0   7400 Jun 18 14:20 2025 cstart.c.obj
 architecture: i386, flags 0x00000011:
 HAS_RELOC, HAS_SYMS
 start address 0x00000000
@@ -144,32 +144,32 @@ void cstart(int argc,char **argv){
 			37: R_386_PC32	exit
 
 lib_syscall.c.obj:     file format elf32-i386
-rw-rw-rw- 0/0  12260 May 03 11:31 2025 lib_syscall.c.obj
+rw-rw-rw- 0/0  13968 Jun 18 14:20 2025 lib_syscall.c.obj
 architecture: i386, flags 0x00000011:
 HAS_RELOC, HAS_SYMS
 start address 0x00000000
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .text         000002b9  00000000  00000000  00000034  2**0
-                  CONTENTS, ALLOC, LOAD, READONLY, CODE
-  1 .data         00000000  00000000  00000000  000002ed  2**0
+  0 .text         000003fc  00000000  00000000  00000034  2**0
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .data         00000000  00000000  00000000  00000430  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  2 .bss          00000000  00000000  00000000  000002ed  2**0
+  2 .bss          00000000  00000000  00000000  00000430  2**0
                   ALLOC
-  3 .debug_info   00000f62  00000000  00000000  000002ed  2**0
+  3 .debug_info   00001169  00000000  00000000  00000430  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
-  4 .debug_abbrev 00000260  00000000  00000000  0000124f  2**0
+  4 .debug_abbrev 0000026d  00000000  00000000  00001599  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_aranges 00000020  00000000  00000000  000014af  2**0
+  5 .debug_aranges 00000020  00000000  00000000  00001806  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
-  6 .debug_line   00000249  00000000  00000000  000014cf  2**0
+  6 .debug_line   0000028f  00000000  00000000  00001826  2**0
                   CONTENTS, RELOC, READONLY, DEBUGGING
-  7 .debug_str    00000793  00000000  00000000  00001718  2**0
+  7 .debug_str    000007e4  00000000  00000000  00001ab5  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .comment      00000012  00000000  00000000  00001eab  2**0
+  8 .comment      00000012  00000000  00000000  00002299  2**0
                   CONTENTS, READONLY
-  9 .debug_frame  00000258  00000000  00000000  00001ec0  2**2
+  9 .debug_frame  000002f8  00000000  00000000  000022ac  2**2
                   CONTENTS, RELOC, READONLY, DEBUGGING
 SYMBOL TABLE:
 00000000 l    df *ABS*	00000000 lib_syscall.c
@@ -201,16 +201,23 @@ SYMBOL TABLE:
 00000255 g     F .text	00000021 dup
 00000276 g     F .text	00000022 _exit
 00000298 g     F .text	00000021 wait
+000002b9 g     F .text	0000006b opendir
+00000000         *UND*	00000000 malloc
+00000000         *UND*	00000000 free
+00000324 g     F .text	00000040 readdir
+00000364 g     F .text	00000044 closedir
+000003a8 g     F .text	00000033 ioctl
+000003db g     F .text	00000021 unlink
 
 
 
 Disassembly of section .text:
 
 00000000 <sys_call>:
-#include "lib_syscall.h"
-#include "comm/types.h"
-#include "core/syscall.h"
 #include "os_cfg.h"
+
+#include <stdlib.h>
+#include <string.h>
 
 static inline int sys_call(syscall_args_t*args){
    0:	55                   	push   %ebp
@@ -675,5 +682,198 @@ int wait(int* status){
  2ae:	50                   	push   %eax
  2af:	e8 4c fd ff ff       	call   0 <sys_call>
  2b4:	83 c4 04             	add    $0x4,%esp
+}
  2b7:	c9                   	leave  
  2b8:	c3                   	ret    
+
+000002b9 <opendir>:
+
+DIR *opendir(const char* path){
+ 2b9:	55                   	push   %ebp
+ 2ba:	89 e5                	mov    %esp,%ebp
+ 2bc:	83 ec 28             	sub    $0x28,%esp
+    DIR *dir = (DIR*)malloc(sizeof(DIR));
+ 2bf:	83 ec 0c             	sub    $0xc,%esp
+ 2c2:	68 10 01 00 00       	push   $0x110
+ 2c7:	e8 fc ff ff ff       	call   2c8 <opendir+0xf>
+			2c8: R_386_PC32	malloc
+ 2cc:	83 c4 10             	add    $0x10,%esp
+ 2cf:	89 45 f4             	mov    %eax,-0xc(%ebp)
+    if(dir == NULL){
+ 2d2:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+ 2d6:	75 07                	jne    2df <opendir+0x26>
+        return NULL;
+ 2d8:	b8 00 00 00 00       	mov    $0x0,%eax
+ 2dd:	eb 43                	jmp    322 <opendir+0x69>
+    }
+
+    syscall_args_t args;
+    args.id=SYS_OPENDIR;
+ 2df:	c7 45 dc 3c 00 00 00 	movl   $0x3c,-0x24(%ebp)
+    args.arg0=(int)path;
+ 2e6:	8b 45 08             	mov    0x8(%ebp),%eax
+ 2e9:	89 45 e0             	mov    %eax,-0x20(%ebp)
+    args.arg1=(int)dir;
+ 2ec:	8b 45 f4             	mov    -0xc(%ebp),%eax
+ 2ef:	89 45 e4             	mov    %eax,-0x1c(%ebp)
+
+    int err=sys_call(&args);
+ 2f2:	83 ec 0c             	sub    $0xc,%esp
+ 2f5:	8d 45 dc             	lea    -0x24(%ebp),%eax
+ 2f8:	50                   	push   %eax
+ 2f9:	e8 02 fd ff ff       	call   0 <sys_call>
+ 2fe:	83 c4 10             	add    $0x10,%esp
+ 301:	89 45 f0             	mov    %eax,-0x10(%ebp)
+    if(err < 0){
+ 304:	83 7d f0 00          	cmpl   $0x0,-0x10(%ebp)
+ 308:	79 15                	jns    31f <opendir+0x66>
+        free(dir);
+ 30a:	83 ec 0c             	sub    $0xc,%esp
+ 30d:	ff 75 f4             	pushl  -0xc(%ebp)
+ 310:	e8 fc ff ff ff       	call   311 <opendir+0x58>
+			311: R_386_PC32	free
+ 315:	83 c4 10             	add    $0x10,%esp
+        return NULL;
+ 318:	b8 00 00 00 00       	mov    $0x0,%eax
+ 31d:	eb 03                	jmp    322 <opendir+0x69>
+    }
+
+    return dir;
+ 31f:	8b 45 f4             	mov    -0xc(%ebp),%eax
+}
+ 322:	c9                   	leave  
+ 323:	c3                   	ret    
+
+00000324 <readdir>:
+
+struct dirent *readdir(DIR *dir){
+ 324:	55                   	push   %ebp
+ 325:	89 e5                	mov    %esp,%ebp
+ 327:	83 ec 20             	sub    $0x20,%esp
+   syscall_args_t args;
+
+    args.id=SYS_READDIR;
+ 32a:	c7 45 e8 3d 00 00 00 	movl   $0x3d,-0x18(%ebp)
+    args.arg0=(int)dir;
+ 331:	8b 45 08             	mov    0x8(%ebp),%eax
+ 334:	89 45 ec             	mov    %eax,-0x14(%ebp)
+    args.arg1=(int)&dir->dirent;
+ 337:	8b 45 08             	mov    0x8(%ebp),%eax
+ 33a:	83 c0 04             	add    $0x4,%eax
+ 33d:	89 45 f0             	mov    %eax,-0x10(%ebp)
+
+    int err=sys_call(&args);
+ 340:	8d 45 e8             	lea    -0x18(%ebp),%eax
+ 343:	50                   	push   %eax
+ 344:	e8 b7 fc ff ff       	call   0 <sys_call>
+ 349:	83 c4 04             	add    $0x4,%esp
+ 34c:	89 45 fc             	mov    %eax,-0x4(%ebp)
+    if(err < 0){
+ 34f:	83 7d fc 00          	cmpl   $0x0,-0x4(%ebp)
+ 353:	79 07                	jns    35c <readdir+0x38>
+        return NULL;
+ 355:	b8 00 00 00 00       	mov    $0x0,%eax
+ 35a:	eb 06                	jmp    362 <readdir+0x3e>
+    }
+
+    return &dir->dirent;
+ 35c:	8b 45 08             	mov    0x8(%ebp),%eax
+ 35f:	83 c0 04             	add    $0x4,%eax
+}
+ 362:	c9                   	leave  
+ 363:	c3                   	ret    
+
+00000364 <closedir>:
+
+int closedir(DIR *dir){
+ 364:	55                   	push   %ebp
+ 365:	89 e5                	mov    %esp,%ebp
+ 367:	83 ec 28             	sub    $0x28,%esp
+    syscall_args_t args;
+
+    args.id=SYS_CLOSEDIR;
+ 36a:	c7 45 e0 3e 00 00 00 	movl   $0x3e,-0x20(%ebp)
+    args.arg0=(int)dir;
+ 371:	8b 45 08             	mov    0x8(%ebp),%eax
+ 374:	89 45 e4             	mov    %eax,-0x1c(%ebp)
+
+    int err=sys_call(&args);
+ 377:	8d 45 e0             	lea    -0x20(%ebp),%eax
+ 37a:	50                   	push   %eax
+ 37b:	e8 80 fc ff ff       	call   0 <sys_call>
+ 380:	83 c4 04             	add    $0x4,%esp
+ 383:	89 45 f4             	mov    %eax,-0xc(%ebp)
+    if(err < 0){
+ 386:	83 7d f4 00          	cmpl   $0x0,-0xc(%ebp)
+ 38a:	79 07                	jns    393 <closedir+0x2f>
+        return -1;
+ 38c:	b8 ff ff ff ff       	mov    $0xffffffff,%eax
+ 391:	eb 13                	jmp    3a6 <closedir+0x42>
+    }
+
+    free(dir);
+ 393:	83 ec 0c             	sub    $0xc,%esp
+ 396:	ff 75 08             	pushl  0x8(%ebp)
+ 399:	e8 fc ff ff ff       	call   39a <closedir+0x36>
+			39a: R_386_PC32	free
+ 39e:	83 c4 10             	add    $0x10,%esp
+    return 0;
+ 3a1:	b8 00 00 00 00       	mov    $0x0,%eax
+}
+ 3a6:	c9                   	leave  
+ 3a7:	c3                   	ret    
+
+000003a8 <ioctl>:
+
+int ioctl(int file,int cmd,int arg0,int arg1){
+ 3a8:	55                   	push   %ebp
+ 3a9:	89 e5                	mov    %esp,%ebp
+ 3ab:	83 ec 20             	sub    $0x20,%esp
+    syscall_args_t args;
+
+    args.id=SYS_IOCTL;
+ 3ae:	c7 45 ec 3b 00 00 00 	movl   $0x3b,-0x14(%ebp)
+
+    args.arg0=(int)file;
+ 3b5:	8b 45 08             	mov    0x8(%ebp),%eax
+ 3b8:	89 45 f0             	mov    %eax,-0x10(%ebp)
+    args.arg1=(int)cmd;
+ 3bb:	8b 45 0c             	mov    0xc(%ebp),%eax
+ 3be:	89 45 f4             	mov    %eax,-0xc(%ebp)
+    args.arg2=(int)arg0;
+ 3c1:	8b 45 10             	mov    0x10(%ebp),%eax
+ 3c4:	89 45 f8             	mov    %eax,-0x8(%ebp)
+    args.arg3=(int)arg1;
+ 3c7:	8b 45 14             	mov    0x14(%ebp),%eax
+ 3ca:	89 45 fc             	mov    %eax,-0x4(%ebp)
+
+    return sys_call(&args);
+ 3cd:	8d 45 ec             	lea    -0x14(%ebp),%eax
+ 3d0:	50                   	push   %eax
+ 3d1:	e8 2a fc ff ff       	call   0 <sys_call>
+ 3d6:	83 c4 04             	add    $0x4,%esp
+}
+ 3d9:	c9                   	leave  
+ 3da:	c3                   	ret    
+
+000003db <unlink>:
+
+int unlink(const char *path){
+ 3db:	55                   	push   %ebp
+ 3dc:	89 e5                	mov    %esp,%ebp
+ 3de:	83 ec 20             	sub    $0x20,%esp
+    syscall_args_t args;
+
+    args.id=SYS_UNLINK;
+ 3e1:	c7 45 ec 3f 00 00 00 	movl   $0x3f,-0x14(%ebp)
+    args.arg0=(int)path;
+ 3e8:	8b 45 08             	mov    0x8(%ebp),%eax
+ 3eb:	89 45 f0             	mov    %eax,-0x10(%ebp)
+
+    return sys_call(&args);
+ 3ee:	8d 45 ec             	lea    -0x14(%ebp),%eax
+ 3f1:	50                   	push   %eax
+ 3f2:	e8 09 fc ff ff       	call   0 <sys_call>
+ 3f7:	83 c4 04             	add    $0x4,%esp
+ 3fa:	c9                   	leave  
+ 3fb:	c3                   	ret    

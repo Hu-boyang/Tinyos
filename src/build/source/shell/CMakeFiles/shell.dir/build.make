@@ -53,10 +53,10 @@ RM = E:/CppSoft/CMake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/CppProject/TinyOs/src
+CMAKE_SOURCE_DIR = E:/CppProject/Tinyos/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/CppProject/TinyOs/src/build
+CMAKE_BINARY_DIR = E:/CppProject/Tinyos/src/build
 
 # Include any dependencies generated for this target.
 include source/shell/CMakeFiles/shell.dir/depend.make
@@ -74,18 +74,18 @@ source/shell/CMakeFiles/shell.dir/codegen:
 
 source/shell/CMakeFiles/shell.dir/main.c.obj: source/shell/CMakeFiles/shell.dir/flags.make
 source/shell/CMakeFiles/shell.dir/main.c.obj: source/shell/CMakeFiles/shell.dir/includes_C.rsp
-source/shell/CMakeFiles/shell.dir/main.c.obj: E:/CppProject/TinyOs/src/source/shell/main.c
+source/shell/CMakeFiles/shell.dir/main.c.obj: E:/CppProject/Tinyos/src/source/shell/main.c
 source/shell/CMakeFiles/shell.dir/main.c.obj: source/shell/CMakeFiles/shell.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object source/shell/CMakeFiles/shell.dir/main.c.obj"
-	cd E:/CppProject/TinyOs/src/build/source/shell && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/shell/CMakeFiles/shell.dir/main.c.obj -MF CMakeFiles/shell.dir/main.c.obj.d -o CMakeFiles/shell.dir/main.c.obj -c E:/CppProject/TinyOs/src/source/shell/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object source/shell/CMakeFiles/shell.dir/main.c.obj"
+	cd E:/CppProject/Tinyos/src/build/source/shell && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT source/shell/CMakeFiles/shell.dir/main.c.obj -MF CMakeFiles/shell.dir/main.c.obj.d -o CMakeFiles/shell.dir/main.c.obj -c E:/CppProject/Tinyos/src/source/shell/main.c
 
 source/shell/CMakeFiles/shell.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/shell.dir/main.c.i"
-	cd E:/CppProject/TinyOs/src/build/source/shell && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/TinyOs/src/source/shell/main.c > CMakeFiles/shell.dir/main.c.i
+	cd E:/CppProject/Tinyos/src/build/source/shell && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:/CppProject/Tinyos/src/source/shell/main.c > CMakeFiles/shell.dir/main.c.i
 
 source/shell/CMakeFiles/shell.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/shell.dir/main.c.s"
-	cd E:/CppProject/TinyOs/src/build/source/shell && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/TinyOs/src/source/shell/main.c -o CMakeFiles/shell.dir/main.c.s
+	cd E:/CppProject/Tinyos/src/build/source/shell && E:/CppSoft/x86_64-elf-tools-windows/bin/x86_64-elf-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:/CppProject/Tinyos/src/source/shell/main.c -o CMakeFiles/shell.dir/main.c.s
 
 # Object files for target shell
 shell_OBJECTS = \
@@ -98,21 +98,21 @@ source/shell/shell.exe: source/shell/CMakeFiles/shell.dir/main.c.obj
 source/shell/shell.exe: source/shell/CMakeFiles/shell.dir/build.make
 source/shell/shell.exe: source/shell/CMakeFiles/shell.dir/linkLibs.rsp
 source/shell/shell.exe: source/shell/CMakeFiles/shell.dir/objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:/CppProject/TinyOs/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable shell.exe"
-	cd E:/CppProject/TinyOs/src/build/source/shell && x86_64-elf-ld @CMakeFiles/shell.dir/objects1.rsp -m elf_i386 -T E:/CppProject/TinyOs/src/source/shell/link.lds -L E:/CppProject/TinyOs/src/build/source/applib/ -lapp -L E:/CppProject/TinyOs/src/build/../../newlib/i686-elf/lib -lm -lc -o E:/CppProject/TinyOs/src/build/source/shell/shell.elf
-	cd E:/CppProject/TinyOs/src/build/source/shell && x86_64-elf-objcopy -S shell.elf E:/CppProject/TinyOs/src/../image/shell.elf
-	cd E:/CppProject/TinyOs/src/build/source/shell && x86_64-elf-objdump -x -d -S -m i386 E:/CppProject/TinyOs/src/build/source/shell/shell.elf > shell_dis.txt
-	cd E:/CppProject/TinyOs/src/build/source/shell && x86_64-elf-readelf -a E:/CppProject/TinyOs/src/build/source/shell/shell.elf > shell_elf.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=E:/CppProject/Tinyos/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable shell.exe"
+	cd E:/CppProject/Tinyos/src/build/source/shell && x86_64-elf-ld @CMakeFiles/shell.dir/objects1.rsp -m elf_i386 -T E:/CppProject/Tinyos/src/source/shell/link.lds -L E:/CppProject/Tinyos/src/build/source/applib/ -lapp -L E:/CppProject/Tinyos/src/build/../../newlib/i686-elf/lib -lm -lc -o E:/CppProject/Tinyos/src/build/source/shell/shell.elf
+	cd E:/CppProject/Tinyos/src/build/source/shell && x86_64-elf-objcopy -S shell.elf E:/CppProject/Tinyos/src/../image/shell.elf
+	cd E:/CppProject/Tinyos/src/build/source/shell && x86_64-elf-objdump -x -d -S -m i386 E:/CppProject/Tinyos/src/build/source/shell/shell.elf > shell_dis.txt
+	cd E:/CppProject/Tinyos/src/build/source/shell && x86_64-elf-readelf -a E:/CppProject/Tinyos/src/build/source/shell/shell.elf > shell_elf.txt
 
 # Rule to build all files generated by this target.
 source/shell/CMakeFiles/shell.dir/build: source/shell/shell.exe
 .PHONY : source/shell/CMakeFiles/shell.dir/build
 
 source/shell/CMakeFiles/shell.dir/clean:
-	cd E:/CppProject/TinyOs/src/build/source/shell && $(CMAKE_COMMAND) -P CMakeFiles/shell.dir/cmake_clean.cmake
+	cd E:/CppProject/Tinyos/src/build/source/shell && $(CMAKE_COMMAND) -P CMakeFiles/shell.dir/cmake_clean.cmake
 .PHONY : source/shell/CMakeFiles/shell.dir/clean
 
 source/shell/CMakeFiles/shell.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/CppProject/TinyOs/src E:/CppProject/TinyOs/src/source/shell E:/CppProject/TinyOs/src/build E:/CppProject/TinyOs/src/build/source/shell E:/CppProject/TinyOs/src/build/source/shell/CMakeFiles/shell.dir/DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" E:/CppProject/Tinyos/src E:/CppProject/Tinyos/src/source/shell E:/CppProject/Tinyos/src/build E:/CppProject/Tinyos/src/build/source/shell E:/CppProject/Tinyos/src/build/source/shell/CMakeFiles/shell.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : source/shell/CMakeFiles/shell.dir/depend
 

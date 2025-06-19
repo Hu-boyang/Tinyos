@@ -107,6 +107,7 @@ exception_handler smd_exception, 19, 0
 exception_handler virtual_exception, 20, 0
 exception_handler time,0x20,0
 exception_handler kbd,0x21,0
+exception_handler ide_primary,0x2e,0
 
     .global exception_handler_syscall
     .extern do_handler_syscall

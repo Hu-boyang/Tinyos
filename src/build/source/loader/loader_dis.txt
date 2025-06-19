@@ -1,6 +1,6 @@
 
-E:/CppProject/TinyOs/src/build/source/loader/loader.elf:     file format elf32-i386
-E:/CppProject/TinyOs/src/build/source/loader/loader.elf
+E:/CppProject/Tinyos/src/build/source/loader/loader.elf:     file format elf32-i386
+E:/CppProject/Tinyos/src/build/source/loader/loader.elf
 architecture: i386, flags 0x00000112:
 EXEC_P, HAS_SYMS, D_PAGED
 start address 0x00008000
@@ -29,7 +29,7 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   7 .debug_abbrev 00000331  00000000  00000000  00001fb1  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   0000030c  00000000  00000000  000022e2  2**0
+  8 .debug_line   0000030e  00000000  00000000  000022e2  2**0
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  00000268  00000000  00000000  000025f0  2**2
                   CONTENTS, READONLY, DEBUGGING
@@ -552,18 +552,18 @@ static inline uint8_t inb(uint16_t port){
     834c:	c3                   	ret    
 
 0000834d <inw>:
-static inline uint16_t inw(uint16_t port){
+static inline uint16_t inw(uint16_t  port) {
     834d:	55                   	push   %bp
     834e:	89 e5                	mov    %sp,%bp
     8350:	83 ec 14             	sub    $0x14,%sp
     8353:	8b 45 08             	mov    0x8(%di),%ax
     8356:	66 89 45 ec          	mov    %eax,-0x14(%di)
-    __asm__ __volatile__(
+	__asm__ __volatile__("in %1, %0" : "=a" (rv) : "dN" (port));
     835a:	0f b7 45 ec          	movzww -0x14(%di),%ax
     835e:	89 c2                	mov    %ax,%dx
     8360:	66 ed                	in     (%dx),%eax
     8362:	66 89 45 fe          	mov    %eax,-0x2(%di)
-    return rv;
+	return rv;
     8366:	0f b7 45 fe          	movzww -0x2(%di),%ax
 }
     836a:	c9                   	leave  

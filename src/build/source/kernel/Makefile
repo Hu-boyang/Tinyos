@@ -57,10 +57,10 @@ RM = E:/CppSoft/CMake/bin/cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:/CppProject/TinyOs/src
+CMAKE_SOURCE_DIR = E:/CppProject/Tinyos/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:/CppProject/TinyOs/src/build
+CMAKE_BINARY_DIR = E:/CppProject/Tinyos/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles E:/CppProject/TinyOs/src/build/source/kernel//CMakeFiles/progress.marks
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/TinyOs/src/build/CMakeFiles 0
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles E:/CppProject/Tinyos/src/build/source/kernel//CMakeFiles/progress.marks
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/all
+	$(CMAKE_COMMAND) -E cmake_progress_start E:/CppProject/Tinyos/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/clean
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/preinstall
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/preinstall
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/kernel/CMakeFiles/kernel.dir/rule:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/CMakeFiles/kernel.dir/rule
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/kernel/CMakeFiles/kernel.dir/rule
 .PHONY : source/kernel/CMakeFiles/kernel.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ kernel: source/kernel/CMakeFiles/kernel.dir/rule
 
 # fast build rule for target.
 kernel/fast:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/build
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/build
 .PHONY : kernel/fast
 
 core/memory.obj: core/memory.c.obj
@@ -135,7 +135,7 @@ core/memory.obj: core/memory.c.obj
 
 # target to build an object file
 core/memory.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/memory.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/memory.c.obj
 .PHONY : core/memory.c.obj
 
 core/memory.i: core/memory.c.i
@@ -143,7 +143,7 @@ core/memory.i: core/memory.c.i
 
 # target to preprocess a source file
 core/memory.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/memory.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/memory.c.i
 .PHONY : core/memory.c.i
 
 core/memory.s: core/memory.c.s
@@ -151,7 +151,7 @@ core/memory.s: core/memory.c.s
 
 # target to generate assembly for a file
 core/memory.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/memory.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/memory.c.s
 .PHONY : core/memory.c.s
 
 core/syscall.obj: core/syscall.c.obj
@@ -159,7 +159,7 @@ core/syscall.obj: core/syscall.c.obj
 
 # target to build an object file
 core/syscall.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/syscall.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/syscall.c.obj
 .PHONY : core/syscall.c.obj
 
 core/syscall.i: core/syscall.c.i
@@ -167,7 +167,7 @@ core/syscall.i: core/syscall.c.i
 
 # target to preprocess a source file
 core/syscall.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/syscall.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/syscall.c.i
 .PHONY : core/syscall.c.i
 
 core/syscall.s: core/syscall.c.s
@@ -175,7 +175,7 @@ core/syscall.s: core/syscall.c.s
 
 # target to generate assembly for a file
 core/syscall.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/syscall.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/syscall.c.s
 .PHONY : core/syscall.c.s
 
 core/task.obj: core/task.c.obj
@@ -183,7 +183,7 @@ core/task.obj: core/task.c.obj
 
 # target to build an object file
 core/task.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.obj
 .PHONY : core/task.c.obj
 
 core/task.i: core/task.c.i
@@ -191,7 +191,7 @@ core/task.i: core/task.c.i
 
 # target to preprocess a source file
 core/task.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.i
 .PHONY : core/task.c.i
 
 core/task.s: core/task.c.s
@@ -199,7 +199,7 @@ core/task.s: core/task.c.s
 
 # target to generate assembly for a file
 core/task.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/core/task.c.s
 .PHONY : core/task.c.s
 
 cpu/cpu.obj: cpu/cpu.c.obj
@@ -207,7 +207,7 @@ cpu/cpu.obj: cpu/cpu.c.obj
 
 # target to build an object file
 cpu/cpu.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/cpu.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/cpu.c.obj
 .PHONY : cpu/cpu.c.obj
 
 cpu/cpu.i: cpu/cpu.c.i
@@ -215,7 +215,7 @@ cpu/cpu.i: cpu/cpu.c.i
 
 # target to preprocess a source file
 cpu/cpu.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/cpu.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/cpu.c.i
 .PHONY : cpu/cpu.c.i
 
 cpu/cpu.s: cpu/cpu.c.s
@@ -223,7 +223,7 @@ cpu/cpu.s: cpu/cpu.c.s
 
 # target to generate assembly for a file
 cpu/cpu.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/cpu.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/cpu.c.s
 .PHONY : cpu/cpu.c.s
 
 cpu/irq.obj: cpu/irq.c.obj
@@ -231,7 +231,7 @@ cpu/irq.obj: cpu/irq.c.obj
 
 # target to build an object file
 cpu/irq.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/irq.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/irq.c.obj
 .PHONY : cpu/irq.c.obj
 
 cpu/irq.i: cpu/irq.c.i
@@ -239,7 +239,7 @@ cpu/irq.i: cpu/irq.c.i
 
 # target to preprocess a source file
 cpu/irq.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/irq.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/irq.c.i
 .PHONY : cpu/irq.c.i
 
 cpu/irq.s: cpu/irq.c.s
@@ -247,7 +247,7 @@ cpu/irq.s: cpu/irq.c.s
 
 # target to generate assembly for a file
 cpu/irq.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/irq.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/cpu/irq.c.s
 .PHONY : cpu/irq.c.s
 
 dev/console.obj: dev/console.c.obj
@@ -255,7 +255,7 @@ dev/console.obj: dev/console.c.obj
 
 # target to build an object file
 dev/console.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/console.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/console.c.obj
 .PHONY : dev/console.c.obj
 
 dev/console.i: dev/console.c.i
@@ -263,7 +263,7 @@ dev/console.i: dev/console.c.i
 
 # target to preprocess a source file
 dev/console.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/console.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/console.c.i
 .PHONY : dev/console.c.i
 
 dev/console.s: dev/console.c.s
@@ -271,7 +271,7 @@ dev/console.s: dev/console.c.s
 
 # target to generate assembly for a file
 dev/console.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/console.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/console.c.s
 .PHONY : dev/console.c.s
 
 dev/dev.obj: dev/dev.c.obj
@@ -279,7 +279,7 @@ dev/dev.obj: dev/dev.c.obj
 
 # target to build an object file
 dev/dev.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/dev.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/dev.c.obj
 .PHONY : dev/dev.c.obj
 
 dev/dev.i: dev/dev.c.i
@@ -287,7 +287,7 @@ dev/dev.i: dev/dev.c.i
 
 # target to preprocess a source file
 dev/dev.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/dev.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/dev.c.i
 .PHONY : dev/dev.c.i
 
 dev/dev.s: dev/dev.c.s
@@ -295,15 +295,39 @@ dev/dev.s: dev/dev.c.s
 
 # target to generate assembly for a file
 dev/dev.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/dev.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/dev.c.s
 .PHONY : dev/dev.c.s
+
+dev/disk.obj: dev/disk.c.obj
+.PHONY : dev/disk.obj
+
+# target to build an object file
+dev/disk.c.obj:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/disk.c.obj
+.PHONY : dev/disk.c.obj
+
+dev/disk.i: dev/disk.c.i
+.PHONY : dev/disk.i
+
+# target to preprocess a source file
+dev/disk.c.i:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/disk.c.i
+.PHONY : dev/disk.c.i
+
+dev/disk.s: dev/disk.c.s
+.PHONY : dev/disk.s
+
+# target to generate assembly for a file
+dev/disk.c.s:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/disk.c.s
+.PHONY : dev/disk.c.s
 
 dev/kbd.obj: dev/kbd.c.obj
 .PHONY : dev/kbd.obj
 
 # target to build an object file
 dev/kbd.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/kbd.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/kbd.c.obj
 .PHONY : dev/kbd.c.obj
 
 dev/kbd.i: dev/kbd.c.i
@@ -311,7 +335,7 @@ dev/kbd.i: dev/kbd.c.i
 
 # target to preprocess a source file
 dev/kbd.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/kbd.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/kbd.c.i
 .PHONY : dev/kbd.c.i
 
 dev/kbd.s: dev/kbd.c.s
@@ -319,7 +343,7 @@ dev/kbd.s: dev/kbd.c.s
 
 # target to generate assembly for a file
 dev/kbd.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/kbd.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/kbd.c.s
 .PHONY : dev/kbd.c.s
 
 dev/time.obj: dev/time.c.obj
@@ -327,7 +351,7 @@ dev/time.obj: dev/time.c.obj
 
 # target to build an object file
 dev/time.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/time.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/time.c.obj
 .PHONY : dev/time.c.obj
 
 dev/time.i: dev/time.c.i
@@ -335,7 +359,7 @@ dev/time.i: dev/time.c.i
 
 # target to preprocess a source file
 dev/time.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/time.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/time.c.i
 .PHONY : dev/time.c.i
 
 dev/time.s: dev/time.c.s
@@ -343,7 +367,7 @@ dev/time.s: dev/time.c.s
 
 # target to generate assembly for a file
 dev/time.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/time.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/time.c.s
 .PHONY : dev/time.c.s
 
 dev/tty.obj: dev/tty.c.obj
@@ -351,7 +375,7 @@ dev/tty.obj: dev/tty.c.obj
 
 # target to build an object file
 dev/tty.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/tty.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/tty.c.obj
 .PHONY : dev/tty.c.obj
 
 dev/tty.i: dev/tty.c.i
@@ -359,7 +383,7 @@ dev/tty.i: dev/tty.c.i
 
 # target to preprocess a source file
 dev/tty.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/tty.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/tty.c.i
 .PHONY : dev/tty.c.i
 
 dev/tty.s: dev/tty.c.s
@@ -367,15 +391,63 @@ dev/tty.s: dev/tty.c.s
 
 # target to generate assembly for a file
 dev/tty.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/tty.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/dev/tty.c.s
 .PHONY : dev/tty.c.s
+
+fs/devfs/devfs.obj: fs/devfs/devfs.c.obj
+.PHONY : fs/devfs/devfs.obj
+
+# target to build an object file
+fs/devfs/devfs.c.obj:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/devfs/devfs.c.obj
+.PHONY : fs/devfs/devfs.c.obj
+
+fs/devfs/devfs.i: fs/devfs/devfs.c.i
+.PHONY : fs/devfs/devfs.i
+
+# target to preprocess a source file
+fs/devfs/devfs.c.i:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/devfs/devfs.c.i
+.PHONY : fs/devfs/devfs.c.i
+
+fs/devfs/devfs.s: fs/devfs/devfs.c.s
+.PHONY : fs/devfs/devfs.s
+
+# target to generate assembly for a file
+fs/devfs/devfs.c.s:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/devfs/devfs.c.s
+.PHONY : fs/devfs/devfs.c.s
+
+fs/fatfs/fatfs.obj: fs/fatfs/fatfs.c.obj
+.PHONY : fs/fatfs/fatfs.obj
+
+# target to build an object file
+fs/fatfs/fatfs.c.obj:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fatfs/fatfs.c.obj
+.PHONY : fs/fatfs/fatfs.c.obj
+
+fs/fatfs/fatfs.i: fs/fatfs/fatfs.c.i
+.PHONY : fs/fatfs/fatfs.i
+
+# target to preprocess a source file
+fs/fatfs/fatfs.c.i:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fatfs/fatfs.c.i
+.PHONY : fs/fatfs/fatfs.c.i
+
+fs/fatfs/fatfs.s: fs/fatfs/fatfs.c.s
+.PHONY : fs/fatfs/fatfs.s
+
+# target to generate assembly for a file
+fs/fatfs/fatfs.c.s:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fatfs/fatfs.c.s
+.PHONY : fs/fatfs/fatfs.c.s
 
 fs/file.obj: fs/file.c.obj
 .PHONY : fs/file.obj
 
 # target to build an object file
 fs/file.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/file.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/file.c.obj
 .PHONY : fs/file.c.obj
 
 fs/file.i: fs/file.c.i
@@ -383,7 +455,7 @@ fs/file.i: fs/file.c.i
 
 # target to preprocess a source file
 fs/file.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/file.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/file.c.i
 .PHONY : fs/file.c.i
 
 fs/file.s: fs/file.c.s
@@ -391,7 +463,7 @@ fs/file.s: fs/file.c.s
 
 # target to generate assembly for a file
 fs/file.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/file.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/file.c.s
 .PHONY : fs/file.c.s
 
 fs/fs.obj: fs/fs.c.obj
@@ -399,7 +471,7 @@ fs/fs.obj: fs/fs.c.obj
 
 # target to build an object file
 fs/fs.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fs.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fs.c.obj
 .PHONY : fs/fs.c.obj
 
 fs/fs.i: fs/fs.c.i
@@ -407,7 +479,7 @@ fs/fs.i: fs/fs.c.i
 
 # target to preprocess a source file
 fs/fs.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fs.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fs.c.i
 .PHONY : fs/fs.c.i
 
 fs/fs.s: fs/fs.c.s
@@ -415,7 +487,7 @@ fs/fs.s: fs/fs.c.s
 
 # target to generate assembly for a file
 fs/fs.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fs.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/fs/fs.c.s
 .PHONY : fs/fs.c.s
 
 init/first_task.obj: init/first_task.c.obj
@@ -423,7 +495,7 @@ init/first_task.obj: init/first_task.c.obj
 
 # target to build an object file
 init/first_task.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task.c.obj
 .PHONY : init/first_task.c.obj
 
 init/first_task.i: init/first_task.c.i
@@ -431,7 +503,7 @@ init/first_task.i: init/first_task.c.i
 
 # target to preprocess a source file
 init/first_task.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task.c.i
 .PHONY : init/first_task.c.i
 
 init/first_task.s: init/first_task.c.s
@@ -439,7 +511,7 @@ init/first_task.s: init/first_task.c.s
 
 # target to generate assembly for a file
 init/first_task.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task.c.s
 .PHONY : init/first_task.c.s
 
 init/first_task_entry.obj: init/first_task_entry.S.obj
@@ -447,7 +519,7 @@ init/first_task_entry.obj: init/first_task_entry.S.obj
 
 # target to build an object file
 init/first_task_entry.S.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task_entry.S.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/first_task_entry.S.obj
 .PHONY : init/first_task_entry.S.obj
 
 init/init.obj: init/init.c.obj
@@ -455,7 +527,7 @@ init/init.obj: init/init.c.obj
 
 # target to build an object file
 init/init.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/init.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/init.c.obj
 .PHONY : init/init.c.obj
 
 init/init.i: init/init.c.i
@@ -463,7 +535,7 @@ init/init.i: init/init.c.i
 
 # target to preprocess a source file
 init/init.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/init.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/init.c.i
 .PHONY : init/init.c.i
 
 init/init.s: init/init.c.s
@@ -471,15 +543,39 @@ init/init.s: init/init.c.s
 
 # target to generate assembly for a file
 init/init.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/init.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/init.c.s
 .PHONY : init/init.c.s
+
+init/lib_syscall.obj: init/lib_syscall.c.obj
+.PHONY : init/lib_syscall.obj
+
+# target to build an object file
+init/lib_syscall.c.obj:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/lib_syscall.c.obj
+.PHONY : init/lib_syscall.c.obj
+
+init/lib_syscall.i: init/lib_syscall.c.i
+.PHONY : init/lib_syscall.i
+
+# target to preprocess a source file
+init/lib_syscall.c.i:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/lib_syscall.c.i
+.PHONY : init/lib_syscall.c.i
+
+init/lib_syscall.s: init/lib_syscall.c.s
+.PHONY : init/lib_syscall.s
+
+# target to generate assembly for a file
+init/lib_syscall.c.s:
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/lib_syscall.c.s
+.PHONY : init/lib_syscall.c.s
 
 init/start.obj: init/start.S.obj
 .PHONY : init/start.obj
 
 # target to build an object file
 init/start.S.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/start.S.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/init/start.S.obj
 .PHONY : init/start.S.obj
 
 ipc/mutex.obj: ipc/mutex.c.obj
@@ -487,7 +583,7 @@ ipc/mutex.obj: ipc/mutex.c.obj
 
 # target to build an object file
 ipc/mutex.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/mutex.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/mutex.c.obj
 .PHONY : ipc/mutex.c.obj
 
 ipc/mutex.i: ipc/mutex.c.i
@@ -495,7 +591,7 @@ ipc/mutex.i: ipc/mutex.c.i
 
 # target to preprocess a source file
 ipc/mutex.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/mutex.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/mutex.c.i
 .PHONY : ipc/mutex.c.i
 
 ipc/mutex.s: ipc/mutex.c.s
@@ -503,7 +599,7 @@ ipc/mutex.s: ipc/mutex.c.s
 
 # target to generate assembly for a file
 ipc/mutex.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/mutex.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/mutex.c.s
 .PHONY : ipc/mutex.c.s
 
 ipc/sem.obj: ipc/sem.c.obj
@@ -511,7 +607,7 @@ ipc/sem.obj: ipc/sem.c.obj
 
 # target to build an object file
 ipc/sem.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/sem.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/sem.c.obj
 .PHONY : ipc/sem.c.obj
 
 ipc/sem.i: ipc/sem.c.i
@@ -519,7 +615,7 @@ ipc/sem.i: ipc/sem.c.i
 
 # target to preprocess a source file
 ipc/sem.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/sem.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/sem.c.i
 .PHONY : ipc/sem.c.i
 
 ipc/sem.s: ipc/sem.c.s
@@ -527,7 +623,7 @@ ipc/sem.s: ipc/sem.c.s
 
 # target to generate assembly for a file
 ipc/sem.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/sem.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/ipc/sem.c.s
 .PHONY : ipc/sem.c.s
 
 tools/bitmap.obj: tools/bitmap.c.obj
@@ -535,7 +631,7 @@ tools/bitmap.obj: tools/bitmap.c.obj
 
 # target to build an object file
 tools/bitmap.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/bitmap.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/bitmap.c.obj
 .PHONY : tools/bitmap.c.obj
 
 tools/bitmap.i: tools/bitmap.c.i
@@ -543,7 +639,7 @@ tools/bitmap.i: tools/bitmap.c.i
 
 # target to preprocess a source file
 tools/bitmap.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/bitmap.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/bitmap.c.i
 .PHONY : tools/bitmap.c.i
 
 tools/bitmap.s: tools/bitmap.c.s
@@ -551,7 +647,7 @@ tools/bitmap.s: tools/bitmap.c.s
 
 # target to generate assembly for a file
 tools/bitmap.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/bitmap.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/bitmap.c.s
 .PHONY : tools/bitmap.c.s
 
 tools/kilb.obj: tools/kilb.c.obj
@@ -559,7 +655,7 @@ tools/kilb.obj: tools/kilb.c.obj
 
 # target to build an object file
 tools/kilb.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/kilb.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/kilb.c.obj
 .PHONY : tools/kilb.c.obj
 
 tools/kilb.i: tools/kilb.c.i
@@ -567,7 +663,7 @@ tools/kilb.i: tools/kilb.c.i
 
 # target to preprocess a source file
 tools/kilb.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/kilb.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/kilb.c.i
 .PHONY : tools/kilb.c.i
 
 tools/kilb.s: tools/kilb.c.s
@@ -575,7 +671,7 @@ tools/kilb.s: tools/kilb.c.s
 
 # target to generate assembly for a file
 tools/kilb.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/kilb.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/kilb.c.s
 .PHONY : tools/kilb.c.s
 
 tools/list.obj: tools/list.c.obj
@@ -583,7 +679,7 @@ tools/list.obj: tools/list.c.obj
 
 # target to build an object file
 tools/list.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/list.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/list.c.obj
 .PHONY : tools/list.c.obj
 
 tools/list.i: tools/list.c.i
@@ -591,7 +687,7 @@ tools/list.i: tools/list.c.i
 
 # target to preprocess a source file
 tools/list.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/list.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/list.c.i
 .PHONY : tools/list.c.i
 
 tools/list.s: tools/list.c.s
@@ -599,7 +695,7 @@ tools/list.s: tools/list.c.s
 
 # target to generate assembly for a file
 tools/list.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/list.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/list.c.s
 .PHONY : tools/list.c.s
 
 tools/log.obj: tools/log.c.obj
@@ -607,7 +703,7 @@ tools/log.obj: tools/log.c.obj
 
 # target to build an object file
 tools/log.c.obj:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/log.c.obj
 .PHONY : tools/log.c.obj
 
 tools/log.i: tools/log.c.i
@@ -615,7 +711,7 @@ tools/log.i: tools/log.c.i
 
 # target to preprocess a source file
 tools/log.c.i:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/log.c.i
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/log.c.i
 .PHONY : tools/log.c.i
 
 tools/log.s: tools/log.c.s
@@ -623,7 +719,7 @@ tools/log.s: tools/log.c.s
 
 # target to generate assembly for a file
 tools/log.c.s:
-	cd E:/CppProject/TinyOs/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/log.c.s
+	cd E:/CppProject/Tinyos/src/build && $(MAKE) $(MAKESILENT) -f source/kernel/CMakeFiles/kernel.dir/build.make source/kernel/CMakeFiles/kernel.dir/tools/log.c.s
 .PHONY : tools/log.c.s
 
 # Help Target
@@ -656,6 +752,9 @@ help:
 	@echo "... dev/dev.obj"
 	@echo "... dev/dev.i"
 	@echo "... dev/dev.s"
+	@echo "... dev/disk.obj"
+	@echo "... dev/disk.i"
+	@echo "... dev/disk.s"
 	@echo "... dev/kbd.obj"
 	@echo "... dev/kbd.i"
 	@echo "... dev/kbd.s"
@@ -665,6 +764,12 @@ help:
 	@echo "... dev/tty.obj"
 	@echo "... dev/tty.i"
 	@echo "... dev/tty.s"
+	@echo "... fs/devfs/devfs.obj"
+	@echo "... fs/devfs/devfs.i"
+	@echo "... fs/devfs/devfs.s"
+	@echo "... fs/fatfs/fatfs.obj"
+	@echo "... fs/fatfs/fatfs.i"
+	@echo "... fs/fatfs/fatfs.s"
 	@echo "... fs/file.obj"
 	@echo "... fs/file.i"
 	@echo "... fs/file.s"
@@ -678,6 +783,9 @@ help:
 	@echo "... init/init.obj"
 	@echo "... init/init.i"
 	@echo "... init/init.s"
+	@echo "... init/lib_syscall.obj"
+	@echo "... init/lib_syscall.i"
+	@echo "... init/lib_syscall.s"
 	@echo "... init/start.obj"
 	@echo "... ipc/mutex.obj"
 	@echo "... ipc/mutex.i"
@@ -708,6 +816,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd E:/CppProject/TinyOs/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd E:/CppProject/Tinyos/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

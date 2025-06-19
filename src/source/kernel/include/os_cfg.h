@@ -27,4 +27,7 @@
 
 /// @brief 任务的数量
 #define TASK_NR                 128
+
+/// @brief 根文件系统的设备号
+#define ROOT_DEV             DEV_DISK,0xb1
 #endif

@@ -46,16 +46,20 @@ static inline uint8_t inb(uint16_t port){
  * @brief 向端口写入一个字，16位
  * @param port 端口号
  */
-static inline uint16_t inw(uint16_t port){
-    uint16_t rv;
-    __asm__ __volatile__(
-        "in %[p],%[v]"
-        :[v]"=a"(rv)
-        :[p]"d"(port)
-    );
-    return rv;
+static inline uint16_t inw(uint16_t  port) {
+	uint16_t rv;
+	__asm__ __volatile__("in %1, %0" : "=a" (rv) : "dN" (port));
+	return rv;
 }
 
+static inline void outw(uint16_t port,uint16_t data){
+    __asm__ __volatile__(
+        "out %[v],%[p]"
+        :
+        :[p]"d"(port), [v]"a"(data)
+    );
+    
+}
 /**
  * @brief 向端口输出一个字节
  * @param port 端口号

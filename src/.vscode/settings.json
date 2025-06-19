@@ -28,6 +28,12 @@
         "irq.h": "c",
         "log.h": "c",
         "string.h": "c",
-        "stat.h": "c"
+        "stat.h": "c",
+        "fs.h": "c",
+        "disk.h": "c",
+        "file.h": "c",
+        "fatfs.h": "c",
+        "main.h": "c",
+        "stdio.h": "c"
     },
 }
