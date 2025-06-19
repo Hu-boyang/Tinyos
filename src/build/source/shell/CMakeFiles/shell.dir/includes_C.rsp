@@ -1,1 +1,0 @@
--IE:/CppProject/Tinyos/src/source -IE:/CppProject/Tinyos/src/source/kernel/include -I"E:/CppProject/Tinyos/src/../newlib/i686-elf/include" -IE:/CppProject/Tinyos/src/source/shell/../applib
