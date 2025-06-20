@@ -739,7 +739,7 @@ int fatfs_closedir(struct _fs_t *fs,DIR *dir){
  * @param path 要删除的文件或目录的路径
  */
 int fatfs_unlink(struct _fs_t *fs,const char *path){
- fat_t * fat = (fat_t *)fs->data;
+  fat_t * fat = (fat_t *)fs->data;
 
     // 遍历根目录的数据区，找到已经存在的匹配项
     for (int i = 0; i < fat->root_ent_cnt; i++) {
@@ -761,7 +761,7 @@ int fatfs_unlink(struct _fs_t *fs,const char *path){
         // 找到要打开的目录
         if (diritem_name_match(item, path)) {
             // 释放簇
-            int cluster = (item->DIR_FstClusHI << 16) | item->DIR_FstClusLO;
+            int cluster = (item->DIR_FstClusHI << 16) | item->DIR_FstClusL0;
             cluster_free_chain(fat, cluster);
 
             // 写diritem项
